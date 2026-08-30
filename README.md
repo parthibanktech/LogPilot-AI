@@ -5,7 +5,6 @@
 [![FAISS Vector DB](https://img.shields.io/badge/FAISS-VectorDB-0052CC?style=for-the-badge)](https://faiss.ai)
 [![Docker Ready](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
 [![CI/CD Pipeline](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 > **LogPilot AI** is an autonomous Tier-3 Infrastructure Systems & Reliability Engineering Copilot built for real-time microservices log stream analysis, instant incident root cause diagnosis (RCA), and automated parameter-specific SOP playbooks.
 
@@ -93,7 +92,7 @@ LogPilot AI features a sleek, dark-mode glassmorphism interface:
 
 ```bash
 # Clone repository
-git clone https://github.com/your-username/LogPilot-AI.git
+git clone https://github.com/parthibanktech/LogPilot-AI.git
 cd LogPilot-AI
 
 # Create virtual environment
@@ -154,12 +153,12 @@ curl http://localhost:8000/api/health
 Run the built-in end-to-end verification suite to validate all 5 system design guarantees:
 
 ```bash
-python verify_full_application.py
+python tests/verify_full_application.py
 ```
 
 Run live REST API endpoint validation:
 ```bash
-python test_live_http_api.py
+python tests/test_live_http_api.py
 ```
 
 ---
@@ -172,9 +171,3 @@ python test_live_http_api.py
 | `GET /api/logs` | `GET` | Retrieve service logs with parameters `service`, `search`, and `lines` |
 | `POST /api/query` | `POST` | Execute RAG incident query diagnosis with `query` and `service_filter` |
 | `GET /api/telemetry` | `GET` | Retrieve system latency, success rates, and query telemetry summary |
-
----
-
-## 📄 License
-
-Distributed under the **MIT License**. See `LICENSE` for more information.
