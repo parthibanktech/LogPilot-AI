@@ -5385,3 +5385,486 @@
 2026-08-30T18:22:05.086921Z CRITICAL [RedisEvent-34] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
   Command 'SET' rejected for key 'cache:session:41393'. Policy 'noeviction' prevented key removal.
 
+2026-08-30T18:22:23.132613Z WARNING [QueryMonitor-89] postgres.slow_query - Long running transaction detected: PID 39216 running for 826s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:22:26.137910Z CRITICAL [RedisEvent-30] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:45633'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:22:29.143841Z WARNING [QueryMonitor-80] postgres.slow_query - Long running transaction detected: PID 57195 running for 386s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:22:32.154185Z CRITICAL [RedisEvent-77] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:12910'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:22:35.168003Z CRITICAL [RedisEvent-32] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:19896'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:22:38.220934Z WARNING [QueryMonitor-61] postgres.slow_query - Long running transaction detected: PID 45527 running for 557s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:22:50.370373Z CRITICAL [RedisEvent-51] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:69437'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:22:56.386672Z WARNING [QueryMonitor-55] postgres.slow_query - Long running transaction detected: PID 21378 running for 764s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:23:02.402111Z ERROR [DBPool-82] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:23:05.407748Z ERROR [DBPool-48] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:23:08.413229Z ERROR [DBPool-33] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:23:11.418553Z WARNING [QueryMonitor-68] postgres.slow_query - Long running transaction detected: PID 49979 running for 582s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:23:23.444827Z WARNING [QueryMonitor-92] postgres.slow_query - Long running transaction detected: PID 21321 running for 518s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:23:26.459195Z ERROR [DBPool-58] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:23:29.469987Z CRITICAL [RedisEvent-37] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:23313'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:23:35.480284Z WARNING [QueryMonitor-88] postgres.slow_query - Long running transaction detected: PID 97540 running for 327s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:23:41.494924Z WARNING [QueryMonitor-30] postgres.slow_query - Long running transaction detected: PID 78030 running for 445s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:23:53.540291Z CRITICAL [RedisEvent-43] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:32275'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:23:56.545533Z ERROR [DBPool-63] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:24:08.569793Z ERROR [DBPool-47] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:24:11.582930Z ERROR [DBPool-83] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:24:14.597245Z WARNING [QueryMonitor-74] postgres.slow_query - Long running transaction detected: PID 81601 running for 561s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:24:17.602617Z CRITICAL [RedisEvent-46] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:19650'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:24:38.661157Z CRITICAL [RedisEvent-88] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:12133'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:24:50.697229Z ERROR [DBPool-73] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:24:59.713644Z WARNING [QueryMonitor-89] postgres.slow_query - Long running transaction detected: PID 51913 running for 737s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:25:05.725143Z CRITICAL [RedisEvent-41] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:58476'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:25:17.745778Z WARNING [QueryMonitor-28] postgres.slow_query - Long running transaction detected: PID 39383 running for 326s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:25:20.753069Z WARNING [QueryMonitor-31] postgres.slow_query - Long running transaction detected: PID 62448 running for 540s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:25:35.781648Z CRITICAL [RedisEvent-20] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:12372'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:25:44.799001Z CRITICAL [RedisEvent-19] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:93971'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:25:50.819613Z CRITICAL [RedisEvent-39] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:86681'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:25:59.837466Z ERROR [DBPool-87] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:26:08.857638Z WARNING [QueryMonitor-28] postgres.slow_query - Long running transaction detected: PID 34252 running for 502s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:26:24.862468Z ERROR [DBPool-57] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:26:27.869269Z CRITICAL [RedisEvent-97] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:11270'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:26:30.878962Z ERROR [DBPool-27] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:26:46.122313Z WARNING [QueryMonitor-23] postgres.slow_query - Long running transaction detected: PID 87176 running for 381s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:26:49.150135Z ERROR [DBPool-57] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:26:52.167242Z ERROR [DBPool-76] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:26:58.209131Z WARNING [QueryMonitor-29] postgres.slow_query - Long running transaction detected: PID 69537 running for 816s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:27:10.245724Z ERROR [DBPool-38] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:27:34.308462Z ERROR [DBPool-35] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:27:49.348374Z CRITICAL [RedisEvent-31] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:94843'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:28:13.405924Z CRITICAL [RedisEvent-51] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:85758'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:28:16.412444Z ERROR [DBPool-73] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:28:22.424428Z WARNING [QueryMonitor-41] postgres.slow_query - Long running transaction detected: PID 19737 running for 553s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:28:25.431041Z CRITICAL [RedisEvent-25] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:87124'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:28:31.443322Z ERROR [DBPool-81] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:28:43.467959Z ERROR [DBPool-53] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:28:49.485688Z WARNING [QueryMonitor-87] postgres.slow_query - Long running transaction detected: PID 97919 running for 571s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:29:01.509540Z WARNING [QueryMonitor-81] postgres.slow_query - Long running transaction detected: PID 85151 running for 564s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:29:07.522243Z WARNING [QueryMonitor-37] postgres.slow_query - Long running transaction detected: PID 28616 running for 649s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:29:13.544000Z CRITICAL [RedisEvent-71] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:76093'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:29:16.559855Z WARNING [QueryMonitor-44] postgres.slow_query - Long running transaction detected: PID 40969 running for 840s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:29:22.570443Z WARNING [QueryMonitor-14] postgres.slow_query - Long running transaction detected: PID 29980 running for 644s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:29:40.612413Z WARNING [QueryMonitor-87] postgres.slow_query - Long running transaction detected: PID 42272 running for 623s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:29:46.630256Z CRITICAL [RedisEvent-52] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:71988'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:29:49.639110Z WARNING [QueryMonitor-60] postgres.slow_query - Long running transaction detected: PID 34827 running for 610s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:29:58.660532Z ERROR [DBPool-88] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:30:07.679923Z CRITICAL [RedisEvent-29] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:73650'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:30:10.685839Z WARNING [QueryMonitor-60] postgres.slow_query - Long running transaction detected: PID 18021 running for 451s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:30:19.703824Z CRITICAL [RedisEvent-81] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:23783'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:30:31.734267Z WARNING [QueryMonitor-21] postgres.slow_query - Long running transaction detected: PID 83728 running for 356s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:30:34.739288Z CRITICAL [RedisEvent-62] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:41006'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:30:37.744819Z ERROR [DBPool-50] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:30:40.750836Z WARNING [QueryMonitor-42] postgres.slow_query - Long running transaction detected: PID 70934 running for 499s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:30:49.767486Z CRITICAL [RedisEvent-54] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:27221'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:30:55.784159Z CRITICAL [RedisEvent-80] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:22189'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:31:01.798937Z CRITICAL [RedisEvent-39] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:97479'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:31:16.826577Z ERROR [DBPool-49] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:31:31.857772Z CRITICAL [RedisEvent-14] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:76088'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:31:40.876557Z CRITICAL [RedisEvent-60] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:76261'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:31:46.887563Z WARNING [QueryMonitor-55] postgres.slow_query - Long running transaction detected: PID 55399 running for 644s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:32:16.966728Z WARNING [QueryMonitor-59] postgres.slow_query - Long running transaction detected: PID 63362 running for 410s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:32:25.986092Z ERROR [DBPool-28] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:32:31.998636Z CRITICAL [RedisEvent-83] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:25892'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:32:44.023324Z WARNING [QueryMonitor-38] postgres.slow_query - Long running transaction detected: PID 47492 running for 656s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:32:47.029064Z WARNING [QueryMonitor-49] postgres.slow_query - Long running transaction detected: PID 24253 running for 436s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:32:50.034833Z WARNING [QueryMonitor-16] postgres.slow_query - Long running transaction detected: PID 55151 running for 566s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:33:02.063689Z CRITICAL [RedisEvent-36] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:93555'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:33:11.083796Z ERROR [DBPool-12] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:33:14.090231Z CRITICAL [RedisEvent-65] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:70394'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:33:29.133113Z WARNING [QueryMonitor-38] postgres.slow_query - Long running transaction detected: PID 84186 running for 388s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:33:32.139500Z ERROR [DBPool-87] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:33:47.178760Z CRITICAL [RedisEvent-37] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:62400'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:33:53.194174Z WARNING [QueryMonitor-61] postgres.slow_query - Long running transaction detected: PID 87840 running for 781s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:33:59.207985Z ERROR [DBPool-21] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:34:02.214861Z WARNING [QueryMonitor-70] postgres.slow_query - Long running transaction detected: PID 87065 running for 617s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:34:14.239346Z WARNING [QueryMonitor-93] postgres.slow_query - Long running transaction detected: PID 51811 running for 642s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:34:20.251732Z CRITICAL [RedisEvent-31] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:90778'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:34:56.335353Z WARNING [QueryMonitor-36] postgres.slow_query - Long running transaction detected: PID 28336 running for 540s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:35:14.371404Z CRITICAL [RedisEvent-90] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:14140'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:35:20.383721Z ERROR [DBPool-66] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:35:23.390553Z ERROR [DBPool-16] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:35:41.428098Z WARNING [QueryMonitor-84] postgres.slow_query - Long running transaction detected: PID 54476 running for 777s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:35:56.460675Z WARNING [QueryMonitor-73] postgres.slow_query - Long running transaction detected: PID 23987 running for 414s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:36:02.477444Z WARNING [QueryMonitor-13] postgres.slow_query - Long running transaction detected: PID 94640 running for 711s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:36:05.483522Z WARNING [QueryMonitor-79] postgres.slow_query - Long running transaction detected: PID 78156 running for 574s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:36:08.489522Z ERROR [DBPool-76] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:36:11.495896Z CRITICAL [RedisEvent-70] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:45432'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:36:14.511721Z WARNING [QueryMonitor-96] postgres.slow_query - Long running transaction detected: PID 74738 running for 477s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:36:17.517672Z CRITICAL [RedisEvent-53] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:99324'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:36:23.529904Z WARNING [QueryMonitor-16] postgres.slow_query - Long running transaction detected: PID 32208 running for 693s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:36:32.547647Z WARNING [QueryMonitor-75] postgres.slow_query - Long running transaction detected: PID 98525 running for 477s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:36:35.553610Z CRITICAL [RedisEvent-28] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:75102'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:37:17.641487Z WARNING [QueryMonitor-27] postgres.slow_query - Long running transaction detected: PID 60112 running for 593s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:37:20.647894Z CRITICAL [RedisEvent-79] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:78043'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:37:26.659887Z WARNING [QueryMonitor-27] postgres.slow_query - Long running transaction detected: PID 43292 running for 375s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:37:29.666180Z ERROR [DBPool-34] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:37:32.674521Z ERROR [DBPool-83] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:37:41.694081Z CRITICAL [RedisEvent-12] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:48016'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:37:44.699796Z CRITICAL [RedisEvent-44] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:23057'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:38:02.737041Z CRITICAL [RedisEvent-94] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:61145'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:38:05.742530Z CRITICAL [RedisEvent-48] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:29291'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:38:23.782220Z ERROR [DBPool-42] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:38:26.787793Z ERROR [DBPool-76] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:38:29.792782Z CRITICAL [RedisEvent-35] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:82941'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:38:32.798785Z ERROR [DBPool-28] postgres.connection.pool - Connection acquire timeout after 5000ms. Active: 100/100, Idle: 0, Waiting: 42.
+  SQL State: 53300 (too_many_connections) - User 'app_user' has reached maximum allowed connections.
+
+2026-08-30T18:38:41.815325Z WARNING [QueryMonitor-86] postgres.slow_query - Long running transaction detected: PID 65873 running for 679s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:38:47.827841Z WARNING [QueryMonitor-57] postgres.slow_query - Long running transaction detected: PID 28984 running for 482s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:39:11.888110Z WARNING [QueryMonitor-46] postgres.slow_query - Long running transaction detected: PID 18899 running for 527s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:39:14.903075Z CRITICAL [RedisEvent-43] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:54019'. Policy 'noeviction' prevented key removal.
+
+2026-08-30T18:39:23.930204Z WARNING [QueryMonitor-67] postgres.slow_query - Long running transaction detected: PID 42310 running for 811s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:39:39.058458Z WARNING [QueryMonitor-51] postgres.slow_query - Long running transaction detected: PID 20197 running for 633s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:39:42.068377Z WARNING [QueryMonitor-78] postgres.slow_query - Long running transaction detected: PID 64088 running for 532s.
+  Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at < NOW() - INTERVAL '1 day' ORDER BY created_at DESC;
+  Execution State: active | Wait Event: IO:DataFileRead | Locks Held: ExclusiveLock on relation 'orders'
+  Context: Unindexed sequential scan (seq_scan) on table 'orders' (12,450,000 rows scanned).
+
+2026-08-30T18:40:00.119948Z CRITICAL [RedisEvent-26] redis.cluster.memory - Redis OOM threshold reached. Used: 2048MB / Max: 2048MB.
+  Command 'SET' rejected for key 'cache:session:75703'. Policy 'noeviction' prevented key removal.
+
