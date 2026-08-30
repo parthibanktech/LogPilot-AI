@@ -1,13 +1,5 @@
 [
   {
-    "timestamp": "2026-08-30T08:43:23.270136Z",
-    "query": "Kafka consumer group 'order-processing-group' lag is 64200. How to resolve?",
-    "latency_ms": 8097.82,
-    "chunks_retrieved": 5,
-    "status": "SUCCESS",
-    "guardrail_triggered": false
-  },
-  {
     "timestamp": "2026-08-30T08:43:23.557405Z",
     "query": "Kafka consumer group 'order-processing-group' lag is 64200. How to resolve?",
     "latency_ms": 191.04,
@@ -795,6 +787,14 @@
     "timestamp": "2026-08-30T18:12:38.605162Z",
     "query": "Redis cluster reports OOM command not allowed when used memory > maxmemory",
     "latency_ms": 7713.25,
+    "chunks_retrieved": 5,
+    "status": "SUCCESS",
+    "guardrail_triggered": false
+  },
+  {
+    "timestamp": "2026-08-30T18:55:12.793883Z",
+    "query": "Apache gateway-proxy SSL handshake failed, certificate expired. How to fix?",
+    "latency_ms": 19789.58,
     "chunks_retrieved": 5,
     "status": "SUCCESS",
     "guardrail_triggered": false

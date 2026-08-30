@@ -36,7 +36,7 @@ class SysOpsRAGService:
         self.vector_store.build_from_documents(self.documents)
         
         self.hybrid_engine = HybridSearchEngine(self.vector_store, self.documents)
-        self.model = LLMFactory.get_model(temperature=0.0, max_tokens=1000)
+        self.model = LLMFactory.get_model(temperature=0.0, max_tokens=3000)
         print("[Service Init] Enterprise RAG Service v5.3 initialized successfully.")
         
     def process_query(self, query: str, chat_history: List[Dict[str, str]] = None, service_filter: str = None) -> dict:

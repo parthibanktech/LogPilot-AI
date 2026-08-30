@@ -7251,3 +7251,609 @@
     at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
     at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
 
+2026-08-30T18:40:09.140024Z CRITICAL [PaymentWorker-89] payment_gateway.processor - Payment transaction tx_48952 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 150, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:40:15.162860Z ERROR [KafkaConsumer-96] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 41822.
+
+2026-08-30T18:40:18.170919Z CRITICAL [PaymentWorker-78] payment_gateway.processor - Payment transaction tx_49386 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 323, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:40:24.208335Z CRITICAL [PaymentWorker-58] payment_gateway.processor - Payment transaction tx_27123 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 282, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:40:33.226891Z ERROR [KafkaConsumer-49] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 71315.
+
+2026-08-30T18:40:42.254875Z CRITICAL [PaymentWorker-77] payment_gateway.processor - Payment transaction tx_62118 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 480, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:40:51.272160Z ERROR [KafkaConsumer-45] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 44977.
+
+2026-08-30T18:40:54.286136Z CRITICAL [PaymentWorker-34] payment_gateway.processor - Payment transaction tx_71724 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 437, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:40:57.291260Z CRITICAL [PaymentWorker-79] payment_gateway.processor - Payment transaction tx_32392 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 331, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:41:03.301958Z CRITICAL [PaymentWorker-66] payment_gateway.processor - Payment transaction tx_71294 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 378, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:41:09.313308Z CRITICAL [PaymentWorker-78] payment_gateway.processor - Payment transaction tx_96478 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 32, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:41:12.321240Z CRITICAL [PaymentWorker-57] payment_gateway.processor - Payment transaction tx_65232 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 262, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:41:18.334074Z ERROR [KafkaConsumer-67] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 69335.
+
+2026-08-30T18:41:33.364429Z ERROR [KafkaConsumer-19] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 68600.
+
+2026-08-30T18:41:39.377853Z CRITICAL [PaymentWorker-25] payment_gateway.processor - Payment transaction tx_67266 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 243, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:41:48.395094Z CRITICAL [PaymentWorker-23] payment_gateway.processor - Payment transaction tx_44347 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 336, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:42:06.444938Z ERROR [KafkaConsumer-98] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 50067.
+
+2026-08-30T18:42:30.506412Z CRITICAL [PaymentWorker-22] payment_gateway.processor - Payment transaction tx_12030 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 353, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:42:36.519629Z ERROR [KafkaConsumer-41] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 40449.
+
+2026-08-30T18:42:57.572054Z ERROR [KafkaConsumer-40] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 77124.
+
+2026-08-30T18:43:12.608516Z CRITICAL [PaymentWorker-68] payment_gateway.processor - Payment transaction tx_79888 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 162, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:43:24.635712Z CRITICAL [PaymentWorker-48] payment_gateway.processor - Payment transaction tx_64890 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 313, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:43:30.646372Z ERROR [KafkaConsumer-30] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 47602.
+
+2026-08-30T18:43:54.701137Z ERROR [KafkaConsumer-63] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 42977.
+
+2026-08-30T18:43:57.711506Z ERROR [KafkaConsumer-91] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 59092.
+
+2026-08-30T18:44:06.729352Z ERROR [KafkaConsumer-47] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 55320.
+
+2026-08-30T18:44:18.753247Z CRITICAL [PaymentWorker-96] payment_gateway.processor - Payment transaction tx_68041 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 216, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:44:21.760322Z CRITICAL [PaymentWorker-40] payment_gateway.processor - Payment transaction tx_21818 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 333, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:44:24.770009Z ERROR [KafkaConsumer-82] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 43351.
+
+2026-08-30T18:44:27.775404Z CRITICAL [PaymentWorker-65] payment_gateway.processor - Payment transaction tx_16274 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 312, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:44:42.813184Z CRITICAL [PaymentWorker-38] payment_gateway.processor - Payment transaction tx_92244 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 112, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:44:45.821976Z ERROR [KafkaConsumer-60] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 59653.
+
+2026-08-30T18:45:15.893467Z ERROR [KafkaConsumer-40] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 45459.
+
+2026-08-30T18:45:18.899164Z CRITICAL [PaymentWorker-60] payment_gateway.processor - Payment transaction tx_21412 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 114, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:45:21.906147Z CRITICAL [PaymentWorker-81] payment_gateway.processor - Payment transaction tx_25224 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 130, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:45:27.927693Z ERROR [KafkaConsumer-20] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 63648.
+
+2026-08-30T18:45:33.940027Z CRITICAL [PaymentWorker-55] payment_gateway.processor - Payment transaction tx_78664 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 156, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:45:36.954981Z CRITICAL [PaymentWorker-42] payment_gateway.processor - Payment transaction tx_91004 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 219, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:45:39.962310Z CRITICAL [PaymentWorker-95] payment_gateway.processor - Payment transaction tx_87577 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 493, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:45:42.969255Z CRITICAL [PaymentWorker-75] payment_gateway.processor - Payment transaction tx_99361 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 480, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:46:04.027859Z ERROR [KafkaConsumer-69] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 42618.
+
+2026-08-30T18:46:07.037213Z ERROR [KafkaConsumer-16] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 62888.
+
+2026-08-30T18:46:13.052510Z CRITICAL [PaymentWorker-75] payment_gateway.processor - Payment transaction tx_27418 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 437, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:46:22.081134Z CRITICAL [PaymentWorker-93] payment_gateway.processor - Payment transaction tx_74379 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 135, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:46:28.096058Z ERROR [KafkaConsumer-80] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 68393.
+
+2026-08-30T18:46:49.181206Z CRITICAL [PaymentWorker-41] payment_gateway.processor - Payment transaction tx_50778 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 56, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:46:52.187610Z ERROR [KafkaConsumer-21] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 44688.
+
+2026-08-30T18:46:58.205655Z ERROR [KafkaConsumer-54] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 61530.
+
+2026-08-30T18:47:16.289646Z ERROR [KafkaConsumer-15] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 71236.
+
+2026-08-30T18:47:28.326886Z CRITICAL [PaymentWorker-63] payment_gateway.processor - Payment transaction tx_81992 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 289, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:47:31.337250Z ERROR [KafkaConsumer-33] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 59640.
+
+2026-08-30T18:47:34.342658Z ERROR [KafkaConsumer-89] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 55334.
+
+2026-08-30T18:47:58.409000Z CRITICAL [PaymentWorker-90] payment_gateway.processor - Payment transaction tx_84411 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 444, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:48:07.426494Z ERROR [KafkaConsumer-13] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 44278.
+
+2026-08-30T18:48:19.457897Z CRITICAL [PaymentWorker-28] payment_gateway.processor - Payment transaction tx_99218 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 437, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:48:43.521411Z ERROR [KafkaConsumer-16] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 44386.
+
+2026-08-30T18:48:46.528486Z ERROR [KafkaConsumer-91] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 68911.
+
+2026-08-30T18:48:55.574062Z ERROR [KafkaConsumer-74] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 79413.
+
+2026-08-30T18:48:58.591130Z CRITICAL [PaymentWorker-65] payment_gateway.processor - Payment transaction tx_43047 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 263, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:49:04.606824Z ERROR [KafkaConsumer-62] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 73052.
+
+2026-08-30T18:49:07.649644Z ERROR [KafkaConsumer-19] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 75555.
+
+2026-08-30T18:49:13.662088Z ERROR [KafkaConsumer-57] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 47993.
+
+2026-08-30T18:49:31.774320Z ERROR [KafkaConsumer-69] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 52817.
+
+2026-08-30T18:49:37.799374Z ERROR [KafkaConsumer-78] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 70958.
+
+2026-08-30T18:49:46.846581Z CRITICAL [PaymentWorker-39] payment_gateway.processor - Payment transaction tx_16483 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 133, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:50:16.914335Z ERROR [KafkaConsumer-38] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 64387.
+
+2026-08-30T18:50:19.920982Z CRITICAL [PaymentWorker-83] payment_gateway.processor - Payment transaction tx_15345 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 370, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:50:31.945974Z ERROR [KafkaConsumer-17] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 51430.
+
+2026-08-30T18:50:37.959158Z ERROR [KafkaConsumer-13] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 61691.
+
+2026-08-30T18:50:40.974428Z ERROR [KafkaConsumer-98] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 59164.
+
+2026-08-30T18:50:43.980481Z ERROR [KafkaConsumer-84] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 58597.
+
+2026-08-30T18:50:46.986371Z CRITICAL [PaymentWorker-65] payment_gateway.processor - Payment transaction tx_74794 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 401, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:51:05.030091Z ERROR [KafkaConsumer-35] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 58163.
+
+2026-08-30T18:51:11.042255Z ERROR [KafkaConsumer-52] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 46890.
+
+2026-08-30T18:51:14.048678Z CRITICAL [PaymentWorker-49] payment_gateway.processor - Payment transaction tx_19098 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 421, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:51:26.072461Z CRITICAL [PaymentWorker-77] payment_gateway.processor - Payment transaction tx_25716 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 166, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:51:29.079721Z ERROR [KafkaConsumer-90] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 46739.
+
+2026-08-30T18:51:32.085241Z CRITICAL [PaymentWorker-58] payment_gateway.processor - Payment transaction tx_98171 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 151, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:51:38.098477Z CRITICAL [PaymentWorker-28] payment_gateway.processor - Payment transaction tx_11502 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 444, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:51:44.122254Z ERROR [KafkaConsumer-82] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 62727.
+
+2026-08-30T18:51:53.154345Z ERROR [KafkaConsumer-65] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 52849.
+
+2026-08-30T18:52:08.195977Z ERROR [KafkaConsumer-20] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 53667.
+
+2026-08-30T18:52:17.217083Z CRITICAL [PaymentWorker-48] payment_gateway.processor - Payment transaction tx_58803 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 369, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:52:20.223879Z CRITICAL [PaymentWorker-11] payment_gateway.processor - Payment transaction tx_34489 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 143, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:52:23.230527Z ERROR [KafkaConsumer-73] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 41879.
+
+2026-08-30T18:52:26.235583Z ERROR [KafkaConsumer-36] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 46735.
+
+2026-08-30T18:52:29.250321Z ERROR [KafkaConsumer-21] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 46044.
+
+2026-08-30T18:52:38.270653Z ERROR [KafkaConsumer-62] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 41266.
+
+2026-08-30T18:52:44.290844Z CRITICAL [PaymentWorker-90] payment_gateway.processor - Payment transaction tx_30113 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 355, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:52:47.297748Z CRITICAL [PaymentWorker-60] payment_gateway.processor - Payment transaction tx_76585 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 81, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:52:50.304470Z ERROR [KafkaConsumer-62] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 61383.
+
+2026-08-30T18:53:08.368251Z ERROR [KafkaConsumer-85] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 69006.
+
+2026-08-30T18:53:11.373730Z CRITICAL [PaymentWorker-26] payment_gateway.processor - Payment transaction tx_19576 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 383, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:53:14.380176Z ERROR [KafkaConsumer-88] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 47609.
+
+2026-08-30T18:53:20.403277Z CRITICAL [PaymentWorker-69] payment_gateway.processor - Payment transaction tx_30483 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 122, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:53:32.427574Z CRITICAL [PaymentWorker-66] payment_gateway.processor - Payment transaction tx_70236 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 169, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:53:41.452160Z ERROR [KafkaConsumer-61] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 45595.
+
+2026-08-30T18:53:44.468294Z ERROR [KafkaConsumer-54] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 72549.
+
+2026-08-30T18:53:50.481802Z ERROR [KafkaConsumer-18] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 67504.
+
+2026-08-30T18:53:56.517008Z CRITICAL [PaymentWorker-52] payment_gateway.processor - Payment transaction tx_93672 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 215, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:54:05.543381Z CRITICAL [PaymentWorker-28] payment_gateway.processor - Payment transaction tx_83037 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 473, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:54:08.552912Z ERROR [KafkaConsumer-79] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 63703.
+
+2026-08-30T18:54:14.566356Z ERROR [KafkaConsumer-54] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 68009.
+
+2026-08-30T18:54:35.684102Z ERROR [KafkaConsumer-69] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 56031.
+
+2026-08-30T18:54:50.717494Z CRITICAL [PaymentWorker-44] payment_gateway.processor - Payment transaction tx_34401 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 251, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:55:05.764129Z ERROR [KafkaConsumer-68] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 67826.
+
+2026-08-30T18:55:23.813102Z CRITICAL [PaymentWorker-12] payment_gateway.processor - Payment transaction tx_10237 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 354, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:55:26.823686Z ERROR [KafkaConsumer-48] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 58826.
+
+2026-08-30T18:55:41.857647Z ERROR [KafkaConsumer-56] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 57187.
+
+2026-08-30T18:55:50.879216Z CRITICAL [PaymentWorker-68] payment_gateway.processor - Payment transaction tx_64752 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 273, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:55:53.884915Z ERROR [KafkaConsumer-59] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 40250.
+
+2026-08-30T18:55:56.900293Z ERROR [KafkaConsumer-68] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 45230.
+
+2026-08-30T18:55:59.906173Z ERROR [KafkaConsumer-46] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 60062.
+
+2026-08-30T18:56:05.918998Z CRITICAL [PaymentWorker-26] payment_gateway.processor - Payment transaction tx_49991 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 335, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:56:29.978691Z CRITICAL [PaymentWorker-87] payment_gateway.processor - Payment transaction tx_64869 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 456, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:56:38.999102Z ERROR [KafkaConsumer-73] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 46492.
+
+2026-08-30T18:56:51.029758Z CRITICAL [PaymentWorker-65] payment_gateway.processor - Payment transaction tx_37025 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 281, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:57:21.129552Z CRITICAL [PaymentWorker-64] payment_gateway.processor - Payment transaction tx_33904 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 47, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:57:24.135880Z CRITICAL [PaymentWorker-16] payment_gateway.processor - Payment transaction tx_44707 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 435, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:57:27.141573Z ERROR [KafkaConsumer-84] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 58610.
+
+2026-08-30T18:57:30.149858Z CRITICAL [PaymentWorker-31] payment_gateway.processor - Payment transaction tx_76977 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 238, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:57:45.182181Z CRITICAL [PaymentWorker-68] payment_gateway.processor - Payment transaction tx_21546 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 227, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:57:51.195584Z ERROR [KafkaConsumer-25] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 43537.
+
+2026-08-30T18:57:54.200885Z ERROR [KafkaConsumer-54] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 53655.
+
+2026-08-30T18:58:30.295330Z ERROR [KafkaConsumer-25] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 52887.
+
+2026-08-30T18:58:39.315120Z CRITICAL [PaymentWorker-72] payment_gateway.processor - Payment transaction tx_47532 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 352, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:58:45.334412Z CRITICAL [PaymentWorker-63] payment_gateway.processor - Payment transaction tx_18768 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 24, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:58:48.341036Z ERROR [KafkaConsumer-83] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 45409.
+
+2026-08-30T18:59:24.448895Z ERROR [KafkaConsumer-76] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 49926.
+
+2026-08-30T18:59:36.483371Z ERROR [KafkaConsumer-64] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 49818.
+
+2026-08-30T18:59:39.497149Z CRITICAL [PaymentWorker-23] payment_gateway.processor - Payment transaction tx_77537 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 19, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T18:59:42.513359Z ERROR [KafkaConsumer-31] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 48380.
+
+2026-08-30T18:59:48.526336Z CRITICAL [PaymentWorker-95] payment_gateway.processor - Payment transaction tx_27214 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 489, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:00:06.577622Z ERROR [KafkaConsumer-83] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 50044.
+
+2026-08-30T19:00:12.599749Z ERROR [KafkaConsumer-37] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 76238.
+
+2026-08-30T19:00:42.675247Z ERROR [KafkaConsumer-74] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 63291.
+
+2026-08-30T19:00:45.682259Z CRITICAL [PaymentWorker-14] payment_gateway.processor - Payment transaction tx_52217 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 28, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:00:48.695922Z CRITICAL [PaymentWorker-36] payment_gateway.processor - Payment transaction tx_62588 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 83, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:00:51.701945Z CRITICAL [PaymentWorker-32] payment_gateway.processor - Payment transaction tx_68076 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 304, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:00:57.718558Z CRITICAL [PaymentWorker-15] payment_gateway.processor - Payment transaction tx_34577 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 203, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:01:21.770885Z ERROR [KafkaConsumer-20] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 77632.
+
+2026-08-30T19:01:27.783590Z CRITICAL [PaymentWorker-31] payment_gateway.processor - Payment transaction tx_81105 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 283, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:01:42.813711Z CRITICAL [PaymentWorker-84] payment_gateway.processor - Payment transaction tx_45106 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 235, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:01:51.833054Z CRITICAL [PaymentWorker-72] payment_gateway.processor - Payment transaction tx_75238 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 269, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:01:57.845245Z CRITICAL [PaymentWorker-20] payment_gateway.processor - Payment transaction tx_15685 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 489, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:02:03.858063Z ERROR [KafkaConsumer-80] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 70917.
+
+2026-08-30T19:02:12.890419Z ERROR [KafkaConsumer-27] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 0 lag is 59839.
+
+2026-08-30T19:02:33.943041Z CRITICAL [PaymentWorker-53] payment_gateway.processor - Payment transaction tx_83674 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 129, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:02:54.988807Z CRITICAL [PaymentWorker-53] payment_gateway.processor - Payment transaction tx_60899 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 97, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:03:07.015465Z CRITICAL [PaymentWorker-24] payment_gateway.processor - Payment transaction tx_27107 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 378, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:03:19.047658Z ERROR [KafkaConsumer-81] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 2 lag is 77813.
+
+2026-08-30T19:03:22.110804Z CRITICAL [PaymentWorker-33] payment_gateway.processor - Payment transaction tx_26795 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 328, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+
+2026-08-30T19:03:25.366852Z ERROR [KafkaConsumer-94] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 3 lag is 57925.
+
+2026-08-30T19:03:28.373921Z ERROR [KafkaConsumer-71] payment_gateway.kafka - Kafka Consumer Lag Critical: Topic 'payment-events' partition 1 lag is 60484.
+
+2026-08-30T19:03:34.391915Z CRITICAL [PaymentWorker-60] payment_gateway.processor - Payment transaction tx_75851 failed with HTTP 502 Bad Gateway.
+  Request Context: {"amount": 189, "currency": "USD", "gateway": "Stripe-v2", "attempt": 3}
+  Exception: org.apache.http.conn.HttpHostConnectException: Connect to 10.244.2.45:8080 failed: Connection refused
+    at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+    at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+

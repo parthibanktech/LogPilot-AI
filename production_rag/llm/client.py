@@ -1,5 +1,5 @@
 """
-production_rag.llm.client - Resilient LLM Client Factory
+production_rag.llm.client - Resilient LLM Client Factory (v5.3)
 """
 
 from production_rag.config.settings import settings
@@ -18,7 +18,7 @@ class LLMFactory:
         
     @staticmethod
     @retry_with_backoff(max_retries=settings.MAX_RETRIES)
-    def get_model(temperature: float = 0.0, max_tokens: int = 1000):
+    def get_model(temperature: float = 0.0, max_tokens: int = 3000):
         provider = LLMFactory.get_provider_name()
         if provider == "DeepSeek":
             from langchain_deepseek import ChatDeepSeek
