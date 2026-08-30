@@ -7720,3 +7720,641 @@
 
 2026-08-30T19:03:40.405135Z WARNING [AuthThread-51] auth_service.security - Rate limit window 95% full for IP 10.0.4.151.
 
+2026-08-30T19:04:39.590459Z WARNING [AuthThread-65] auth_service.security - Rate limit window 95% full for IP 10.0.4.121.
+
+2026-08-30T19:04:51.613600Z ERROR [AuthThread-42] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:04:51.613600Z.
+  Payload: {"user_id": "usr_85373", "ip": "192.168.1.73", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:04:57.624356Z ERROR [AuthThread-42] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:04:57.624356Z.
+  Payload: {"user_id": "usr_88587", "ip": "192.168.1.63", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:05:03.638631Z ERROR [AuthThread-76] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:05:03.638631Z.
+  Payload: {"user_id": "usr_39237", "ip": "192.168.1.14", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:05:09.801892Z ERROR [AuthThread-50] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:05:09.801892Z.
+  Payload: {"user_id": "usr_24048", "ip": "192.168.1.221", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:05:18.818759Z ERROR [AuthThread-33] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:05:18.818759Z.
+  Payload: {"user_id": "usr_85685", "ip": "192.168.1.32", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:05:21.824022Z ERROR [AuthThread-20] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:05:21.824022Z.
+  Payload: {"user_id": "usr_42739", "ip": "192.168.1.252", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:05:30.841059Z WARNING [AuthThread-77] auth_service.security - Rate limit window 95% full for IP 10.0.4.251.
+
+2026-08-30T19:05:36.851248Z ERROR [AuthThread-24] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:05:36.851248Z.
+  Payload: {"user_id": "usr_69350", "ip": "192.168.1.205", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:05:48.873026Z ERROR [AuthThread-14] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:05:48.873026Z.
+  Payload: {"user_id": "usr_17584", "ip": "192.168.1.92", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:06:06.904970Z ERROR [AuthThread-68] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:06:06.904970Z.
+  Payload: {"user_id": "usr_81982", "ip": "192.168.1.200", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:06:09.910912Z WARNING [AuthThread-39] auth_service.security - Rate limit window 95% full for IP 10.0.4.109.
+
+2026-08-30T19:06:12.915908Z ERROR [AuthThread-98] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:06:12.915908Z.
+  Payload: {"user_id": "usr_65791", "ip": "192.168.1.121", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:06:30.950272Z WARNING [AuthThread-18] auth_service.security - Rate limit window 95% full for IP 10.0.4.221.
+
+2026-08-30T19:06:33.956472Z WARNING [AuthThread-88] auth_service.security - Rate limit window 95% full for IP 10.0.4.144.
+
+2026-08-30T19:06:39.967286Z WARNING [AuthThread-29] auth_service.security - Rate limit window 95% full for IP 10.0.4.182.
+
+2026-08-30T19:06:46.022649Z WARNING [AuthThread-77] auth_service.security - Rate limit window 95% full for IP 10.0.4.94.
+
+2026-08-30T19:07:40.322124Z ERROR [AuthThread-60] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:07:40.322124Z.
+  Payload: {"user_id": "usr_90629", "ip": "192.168.1.51", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:07:46.334717Z ERROR [AuthThread-35] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:07:46.334717Z.
+  Payload: {"user_id": "usr_47233", "ip": "192.168.1.239", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:07:55.352501Z WARNING [AuthThread-11] auth_service.security - Rate limit window 95% full for IP 10.0.4.21.
+
+2026-08-30T19:07:58.383186Z WARNING [AuthThread-76] auth_service.security - Rate limit window 95% full for IP 10.0.4.145.
+
+2026-08-30T19:08:01.388944Z ERROR [AuthThread-33] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:08:01.388944Z.
+  Payload: {"user_id": "usr_66050", "ip": "192.168.1.9", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:08:10.406657Z WARNING [AuthThread-55] auth_service.security - Rate limit window 95% full for IP 10.0.4.162.
+
+2026-08-30T19:08:43.489013Z ERROR [AuthThread-73] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:08:43.489013Z.
+  Payload: {"user_id": "usr_14864", "ip": "192.168.1.24", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:08:46.494907Z WARNING [AuthThread-98] auth_service.security - Rate limit window 95% full for IP 10.0.4.104.
+
+2026-08-30T19:08:52.506279Z ERROR [AuthThread-58] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:08:52.506279Z.
+  Payload: {"user_id": "usr_29615", "ip": "192.168.1.152", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:09:04.527971Z WARNING [AuthThread-93] auth_service.security - Rate limit window 95% full for IP 10.0.4.41.
+
+2026-08-30T19:09:25.580947Z WARNING [AuthThread-78] auth_service.security - Rate limit window 95% full for IP 10.0.4.127.
+
+2026-08-30T19:09:28.587206Z WARNING [AuthThread-43] auth_service.security - Rate limit window 95% full for IP 10.0.4.21.
+
+2026-08-30T19:09:31.592450Z ERROR [AuthThread-31] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:09:31.592450Z.
+  Payload: {"user_id": "usr_55672", "ip": "192.168.1.88", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:09:40.608644Z ERROR [AuthThread-38] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:09:40.608644Z.
+  Payload: {"user_id": "usr_31672", "ip": "192.168.1.248", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:09:55.636303Z WARNING [AuthThread-17] auth_service.security - Rate limit window 95% full for IP 10.0.4.55.
+
+2026-08-30T19:10:16.693739Z WARNING [AuthThread-42] auth_service.security - Rate limit window 95% full for IP 10.0.4.188.
+
+2026-08-30T19:10:31.721843Z ERROR [AuthThread-25] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:10:31.721843Z.
+  Payload: {"user_id": "usr_81249", "ip": "192.168.1.58", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:10:46.757974Z ERROR [AuthThread-70] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:10:46.757974Z.
+  Payload: {"user_id": "usr_60162", "ip": "192.168.1.93", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:11:04.805798Z WARNING [AuthThread-65] auth_service.security - Rate limit window 95% full for IP 10.0.4.191.
+
+2026-08-30T19:11:07.811186Z ERROR [AuthThread-14] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:11:07.811186Z.
+  Payload: {"user_id": "usr_24927", "ip": "192.168.1.47", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:11:22.849077Z ERROR [AuthThread-51] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:11:22.849077Z.
+  Payload: {"user_id": "usr_41454", "ip": "192.168.1.109", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:11:25.860717Z ERROR [AuthThread-97] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:11:25.860717Z.
+  Payload: {"user_id": "usr_43141", "ip": "192.168.1.22", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:11:28.866450Z ERROR [AuthThread-37] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:11:28.866450Z.
+  Payload: {"user_id": "usr_85542", "ip": "192.168.1.53", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:12:01.941172Z WARNING [AuthThread-63] auth_service.security - Rate limit window 95% full for IP 10.0.4.70.
+
+2026-08-30T19:12:04.946242Z WARNING [AuthThread-24] auth_service.security - Rate limit window 95% full for IP 10.0.4.185.
+
+2026-08-30T19:12:23.005586Z WARNING [AuthThread-27] auth_service.security - Rate limit window 95% full for IP 10.0.4.146.
+
+2026-08-30T19:12:44.055888Z WARNING [AuthThread-51] auth_service.security - Rate limit window 95% full for IP 10.0.4.230.
+
+2026-08-30T19:12:56.094508Z ERROR [AuthThread-91] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:12:56.094508Z.
+  Payload: {"user_id": "usr_59319", "ip": "192.168.1.140", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:13:20.162048Z WARNING [AuthThread-96] auth_service.security - Rate limit window 95% full for IP 10.0.4.120.
+
+2026-08-30T19:13:23.167659Z WARNING [AuthThread-44] auth_service.security - Rate limit window 95% full for IP 10.0.4.176.
+
+2026-08-30T19:13:47.244694Z WARNING [AuthThread-46] auth_service.security - Rate limit window 95% full for IP 10.0.4.15.
+
+2026-08-30T19:13:50.257829Z ERROR [AuthThread-72] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:13:50.257829Z.
+  Payload: {"user_id": "usr_57303", "ip": "192.168.1.159", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:13:53.264369Z WARNING [AuthThread-15] auth_service.security - Rate limit window 95% full for IP 10.0.4.145.
+
+2026-08-30T19:13:59.275691Z WARNING [AuthThread-65] auth_service.security - Rate limit window 95% full for IP 10.0.4.86.
+
+2026-08-30T19:14:05.296243Z WARNING [AuthThread-93] auth_service.security - Rate limit window 95% full for IP 10.0.4.40.
+
+2026-08-30T19:14:11.308409Z ERROR [AuthThread-85] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:14:11.308409Z.
+  Payload: {"user_id": "usr_77132", "ip": "192.168.1.142", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:14:14.317658Z WARNING [AuthThread-15] auth_service.security - Rate limit window 95% full for IP 10.0.4.185.
+
+2026-08-30T19:14:17.328353Z WARNING [AuthThread-20] auth_service.security - Rate limit window 95% full for IP 10.0.4.74.
+
+2026-08-30T19:14:20.333935Z WARNING [AuthThread-63] auth_service.security - Rate limit window 95% full for IP 10.0.4.80.
+
+2026-08-30T19:14:23.340121Z ERROR [AuthThread-73] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:14:23.340121Z.
+  Payload: {"user_id": "usr_67022", "ip": "192.168.1.65", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:14:47.411688Z ERROR [AuthThread-72] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:14:47.411688Z.
+  Payload: {"user_id": "usr_45714", "ip": "192.168.1.16", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:14:53.430048Z WARNING [AuthThread-67] auth_service.security - Rate limit window 95% full for IP 10.0.4.51.
+
+2026-08-30T19:15:20.481746Z ERROR [AuthThread-41] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:15:20.481746Z.
+  Payload: {"user_id": "usr_98387", "ip": "192.168.1.247", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:15:32.518198Z ERROR [AuthThread-56] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:15:32.518198Z.
+  Payload: {"user_id": "usr_49311", "ip": "192.168.1.84", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:15:38.537149Z ERROR [AuthThread-90] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:15:38.537149Z.
+  Payload: {"user_id": "usr_16019", "ip": "192.168.1.220", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:15:53.575461Z WARNING [AuthThread-57] auth_service.security - Rate limit window 95% full for IP 10.0.4.60.
+
+2026-08-30T19:15:59.588376Z WARNING [AuthThread-45] auth_service.security - Rate limit window 95% full for IP 10.0.4.142.
+
+2026-08-30T19:16:02.593402Z WARNING [AuthThread-56] auth_service.security - Rate limit window 95% full for IP 10.0.4.244.
+
+2026-08-30T19:16:05.599160Z WARNING [AuthThread-50] auth_service.security - Rate limit window 95% full for IP 10.0.4.33.
+
+2026-08-30T19:16:11.610202Z ERROR [AuthThread-20] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:16:11.610202Z.
+  Payload: {"user_id": "usr_38450", "ip": "192.168.1.17", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:16:32.670278Z ERROR [AuthThread-69] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:16:32.670278Z.
+  Payload: {"user_id": "usr_86439", "ip": "192.168.1.35", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:16:38.689410Z WARNING [AuthThread-82] auth_service.security - Rate limit window 95% full for IP 10.0.4.165.
+
+2026-08-30T19:16:41.695102Z ERROR [AuthThread-77] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:16:41.695102Z.
+  Payload: {"user_id": "usr_54940", "ip": "192.168.1.81", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:16:56.728622Z WARNING [AuthThread-25] auth_service.security - Rate limit window 95% full for IP 10.0.4.81.
+
+2026-08-30T19:17:05.754267Z WARNING [AuthThread-88] auth_service.security - Rate limit window 95% full for IP 10.0.4.79.
+
+2026-08-30T19:17:11.765016Z ERROR [AuthThread-63] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:17:11.765016Z.
+  Payload: {"user_id": "usr_51800", "ip": "192.168.1.237", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:17:14.800881Z WARNING [AuthThread-73] auth_service.security - Rate limit window 95% full for IP 10.0.4.94.
+
+2026-08-30T19:17:17.806106Z WARNING [AuthThread-76] auth_service.security - Rate limit window 95% full for IP 10.0.4.249.
+
+2026-08-30T19:17:20.811883Z WARNING [AuthThread-99] auth_service.security - Rate limit window 95% full for IP 10.0.4.222.
+
+2026-08-30T19:17:38.853753Z WARNING [AuthThread-99] auth_service.security - Rate limit window 95% full for IP 10.0.4.84.
+
+2026-08-30T19:17:56.891447Z WARNING [AuthThread-33] auth_service.security - Rate limit window 95% full for IP 10.0.4.48.
+
+2026-08-30T19:18:05.908015Z WARNING [AuthThread-59] auth_service.security - Rate limit window 95% full for IP 10.0.4.73.
+
+2026-08-30T19:18:08.913254Z ERROR [AuthThread-44] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:18:08.913254Z.
+  Payload: {"user_id": "usr_90250", "ip": "192.168.1.149", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:18:20.937226Z ERROR [AuthThread-23] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:18:20.937226Z.
+  Payload: {"user_id": "usr_12325", "ip": "192.168.1.65", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:18:32.968577Z ERROR [AuthThread-51] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:18:32.968577Z.
+  Payload: {"user_id": "usr_74643", "ip": "192.168.1.172", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:18:35.974519Z WARNING [AuthThread-19] auth_service.security - Rate limit window 95% full for IP 10.0.4.138.
+
+2026-08-30T19:18:57.013792Z WARNING [AuthThread-47] auth_service.security - Rate limit window 95% full for IP 10.0.4.65.
+
+2026-08-30T19:19:09.035688Z WARNING [AuthThread-75] auth_service.security - Rate limit window 95% full for IP 10.0.4.207.
+
+2026-08-30T19:19:15.049167Z WARNING [AuthThread-69] auth_service.security - Rate limit window 95% full for IP 10.0.4.95.
+
+2026-08-30T19:19:18.054810Z WARNING [AuthThread-81] auth_service.security - Rate limit window 95% full for IP 10.0.4.88.
+
+2026-08-30T19:19:24.065927Z ERROR [AuthThread-97] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:19:24.065927Z.
+  Payload: {"user_id": "usr_43780", "ip": "192.168.1.85", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:19:36.087737Z ERROR [AuthThread-70] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:19:36.087737Z.
+  Payload: {"user_id": "usr_60993", "ip": "192.168.1.174", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:19:51.118831Z WARNING [AuthThread-47] auth_service.security - Rate limit window 95% full for IP 10.0.4.157.
+
+2026-08-30T19:20:00.137834Z ERROR [AuthThread-19] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:20:00.137834Z.
+  Payload: {"user_id": "usr_87123", "ip": "192.168.1.243", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:20:03.143500Z ERROR [AuthThread-35] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:20:03.143500Z.
+  Payload: {"user_id": "usr_23320", "ip": "192.168.1.59", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:20:06.148804Z WARNING [AuthThread-18] auth_service.security - Rate limit window 95% full for IP 10.0.4.10.
+
+2026-08-30T19:20:12.160709Z WARNING [AuthThread-22] auth_service.security - Rate limit window 95% full for IP 10.0.4.153.
+
+2026-08-30T19:20:21.251425Z ERROR [AuthThread-44] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:20:21.251425Z.
+  Payload: {"user_id": "usr_57992", "ip": "192.168.1.62", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:20:24.318374Z ERROR [AuthThread-45] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:20:24.318374Z.
+  Payload: {"user_id": "usr_89691", "ip": "192.168.1.44", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:20:30.328124Z WARNING [AuthThread-56] auth_service.security - Rate limit window 95% full for IP 10.0.4.75.
+
+2026-08-30T19:20:36.345529Z ERROR [AuthThread-73] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:20:36.345529Z.
+  Payload: {"user_id": "usr_96277", "ip": "192.168.1.183", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:20:51.376108Z WARNING [AuthThread-51] auth_service.security - Rate limit window 95% full for IP 10.0.4.146.
+
+2026-08-30T19:20:57.388170Z ERROR [AuthThread-54] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:20:57.388170Z.
+  Payload: {"user_id": "usr_57712", "ip": "192.168.1.48", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:21:09.410166Z ERROR [AuthThread-11] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:21:09.410166Z.
+  Payload: {"user_id": "usr_73028", "ip": "192.168.1.55", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:21:15.440429Z ERROR [AuthThread-58] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:21:15.440429Z.
+  Payload: {"user_id": "usr_88640", "ip": "192.168.1.60", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:21:24.457870Z WARNING [AuthThread-54] auth_service.security - Rate limit window 95% full for IP 10.0.4.178.
+
+2026-08-30T19:21:33.483060Z ERROR [AuthThread-53] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:21:33.483060Z.
+  Payload: {"user_id": "usr_30322", "ip": "192.168.1.193", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:21:48.592673Z ERROR [AuthThread-18] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:21:48.592673Z.
+  Payload: {"user_id": "usr_35342", "ip": "192.168.1.10", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:21:54.613760Z ERROR [AuthThread-77] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:21:54.613760Z.
+  Payload: {"user_id": "usr_50403", "ip": "192.168.1.79", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:22:09.657600Z ERROR [AuthThread-79] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:22:09.657600Z.
+  Payload: {"user_id": "usr_88460", "ip": "192.168.1.27", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:22:15.675598Z WARNING [AuthThread-65] auth_service.security - Rate limit window 95% full for IP 10.0.4.148.
+
+2026-08-30T19:22:27.700800Z ERROR [AuthThread-39] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:22:27.700800Z.
+  Payload: {"user_id": "usr_11694", "ip": "192.168.1.217", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:22:33.726503Z WARNING [AuthThread-54] auth_service.security - Rate limit window 95% full for IP 10.0.4.52.
+
+2026-08-30T19:22:36.732240Z WARNING [AuthThread-44] auth_service.security - Rate limit window 95% full for IP 10.0.4.16.
+
+2026-08-30T19:22:45.749690Z WARNING [AuthThread-71] auth_service.security - Rate limit window 95% full for IP 10.0.4.34.
+
+2026-08-30T19:22:48.755453Z WARNING [AuthThread-11] auth_service.security - Rate limit window 95% full for IP 10.0.4.153.
+
+2026-08-30T19:22:54.771276Z ERROR [AuthThread-44] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:22:54.771276Z.
+  Payload: {"user_id": "usr_51898", "ip": "192.168.1.225", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:22:57.777036Z ERROR [AuthThread-76] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:22:57.777036Z.
+  Payload: {"user_id": "usr_73074", "ip": "192.168.1.94", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:23:06.798431Z ERROR [AuthThread-45] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:23:06.798431Z.
+  Payload: {"user_id": "usr_15741", "ip": "192.168.1.45", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:23:09.804452Z WARNING [AuthThread-85] auth_service.security - Rate limit window 95% full for IP 10.0.4.38.
+
+2026-08-30T19:23:12.809591Z WARNING [AuthThread-98] auth_service.security - Rate limit window 95% full for IP 10.0.4.241.
+
+2026-08-30T19:23:15.836656Z WARNING [AuthThread-35] auth_service.security - Rate limit window 95% full for IP 10.0.4.137.
+
+2026-08-30T19:23:21.852252Z ERROR [AuthThread-28] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:23:21.852252Z.
+  Payload: {"user_id": "usr_20902", "ip": "192.168.1.206", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:23:24.857677Z WARNING [AuthThread-47] auth_service.security - Rate limit window 95% full for IP 10.0.4.45.
+
+2026-08-30T19:23:30.868795Z WARNING [AuthThread-33] auth_service.security - Rate limit window 95% full for IP 10.0.4.134.
+
+2026-08-30T19:23:36.879869Z WARNING [AuthThread-79] auth_service.security - Rate limit window 95% full for IP 10.0.4.200.
+
+2026-08-30T19:23:54.929445Z ERROR [AuthThread-27] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:23:54.929445Z.
+  Payload: {"user_id": "usr_66661", "ip": "192.168.1.60", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:24:03.953817Z WARNING [AuthThread-67] auth_service.security - Rate limit window 95% full for IP 10.0.4.134.
+
+2026-08-30T19:24:06.958875Z ERROR [AuthThread-24] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:24:06.958875Z.
+  Payload: {"user_id": "usr_68229", "ip": "192.168.1.24", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:24:28.023791Z ERROR [AuthThread-18] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:24:28.023791Z.
+  Payload: {"user_id": "usr_66580", "ip": "192.168.1.151", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:24:34.034717Z WARNING [AuthThread-96] auth_service.security - Rate limit window 95% full for IP 10.0.4.104.
+
+2026-08-30T19:24:40.046737Z WARNING [AuthThread-35] auth_service.security - Rate limit window 95% full for IP 10.0.4.131.
+
+2026-08-30T19:24:46.239985Z WARNING [AuthThread-29] auth_service.security - Rate limit window 95% full for IP 10.0.4.85.
+
+2026-08-30T19:24:52.254530Z WARNING [AuthThread-36] auth_service.security - Rate limit window 95% full for IP 10.0.4.26.
+
+2026-08-30T19:25:13.293936Z ERROR [AuthThread-49] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:25:13.293936Z.
+  Payload: {"user_id": "usr_59401", "ip": "192.168.1.179", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:25:19.331552Z ERROR [AuthThread-34] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:25:19.331552Z.
+  Payload: {"user_id": "usr_25171", "ip": "192.168.1.175", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:25:28.354842Z ERROR [AuthThread-33] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:25:28.354842Z.
+  Payload: {"user_id": "usr_19506", "ip": "192.168.1.44", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:25:31.360779Z ERROR [AuthThread-89] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:25:31.360779Z.
+  Payload: {"user_id": "usr_45014", "ip": "192.168.1.73", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:25:34.368739Z WARNING [AuthThread-89] auth_service.security - Rate limit window 95% full for IP 10.0.4.114.
+
+2026-08-30T19:25:43.389773Z ERROR [AuthThread-50] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:25:43.389773Z.
+  Payload: {"user_id": "usr_88516", "ip": "192.168.1.20", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:25:46.395360Z ERROR [AuthThread-59] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:25:46.395360Z.
+  Payload: {"user_id": "usr_43042", "ip": "192.168.1.234", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:25:49.402658Z ERROR [AuthThread-94] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:25:49.402658Z.
+  Payload: {"user_id": "usr_97801", "ip": "192.168.1.51", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:25:58.431216Z ERROR [AuthThread-24] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:25:58.431216Z.
+  Payload: {"user_id": "usr_96872", "ip": "192.168.1.17", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:26:04.441837Z ERROR [AuthThread-60] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:26:04.441837Z.
+  Payload: {"user_id": "usr_68453", "ip": "192.168.1.188", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:26:22.488121Z ERROR [AuthThread-58] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:26:22.488121Z.
+  Payload: {"user_id": "usr_86528", "ip": "192.168.1.212", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:26:34.522473Z WARNING [AuthThread-70] auth_service.security - Rate limit window 95% full for IP 10.0.4.112.
+
+2026-08-30T19:26:40.543719Z ERROR [AuthThread-55] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:26:40.543719Z.
+  Payload: {"user_id": "usr_54083", "ip": "192.168.1.153", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:27:10.616317Z WARNING [AuthThread-39] auth_service.security - Rate limit window 95% full for IP 10.0.4.101.
+
+2026-08-30T19:27:19.642703Z ERROR [AuthThread-59] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:27:19.642703Z.
+  Payload: {"user_id": "usr_70952", "ip": "192.168.1.65", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:27:22.648926Z WARNING [AuthThread-40] auth_service.security - Rate limit window 95% full for IP 10.0.4.210.
+
+2026-08-30T19:28:01.850211Z ERROR [AuthThread-43] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:28:01.850211Z.
+  Payload: {"user_id": "usr_28904", "ip": "192.168.1.233", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:28:22.913435Z WARNING [AuthThread-61] auth_service.security - Rate limit window 95% full for IP 10.0.4.46.
+
+2026-08-30T19:28:25.918963Z WARNING [AuthThread-81] auth_service.security - Rate limit window 95% full for IP 10.0.4.34.
+
+2026-08-30T19:28:28.925461Z ERROR [AuthThread-96] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:28:28.925461Z.
+  Payload: {"user_id": "usr_52420", "ip": "192.168.1.109", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:28:34.937384Z WARNING [AuthThread-89] auth_service.security - Rate limit window 95% full for IP 10.0.4.99.
+
+2026-08-30T19:28:37.944029Z ERROR [AuthThread-42] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:28:37.944029Z.
+  Payload: {"user_id": "usr_33514", "ip": "192.168.1.48", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:28:55.997588Z ERROR [AuthThread-27] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:28:55.997588Z.
+  Payload: {"user_id": "usr_70822", "ip": "192.168.1.112", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:29:08.023835Z WARNING [AuthThread-12] auth_service.security - Rate limit window 95% full for IP 10.0.4.166.
+
+2026-08-30T19:29:20.048955Z WARNING [AuthThread-62] auth_service.security - Rate limit window 95% full for IP 10.0.4.132.
+
+2026-08-30T19:29:26.067721Z ERROR [AuthThread-88] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:29:26.067721Z.
+  Payload: {"user_id": "usr_42427", "ip": "192.168.1.143", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:29:29.072584Z ERROR [AuthThread-29] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:29:29.072584Z.
+  Payload: {"user_id": "usr_18483", "ip": "192.168.1.21", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:29:32.077921Z WARNING [AuthThread-45] auth_service.security - Rate limit window 95% full for IP 10.0.4.6.
+
+2026-08-30T19:29:38.092517Z ERROR [AuthThread-41] auth_service.jwt.verifier - JWT Signature verification failed: Token expired at 2026-08-30T19:29:38.092517Z.
+  Payload: {"user_id": "usr_91664", "ip": "192.168.1.66", "user_agent": "Mozilla/5.0 (X11; Linux x86_64)"}
+  Stack trace:
+    at com.auth.jwt.JWTVerifier.verifyToken(JWTVerifier.java:142)
+    at com.auth.service.AuthHandler.handleRequest(AuthHandler.java:88)
+
+2026-08-30T19:29:44.120159Z WARNING [AuthThread-60] auth_service.security - Rate limit window 95% full for IP 10.0.4.157.
+

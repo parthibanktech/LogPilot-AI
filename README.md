@@ -10,6 +10,19 @@
 
 ---
 
+## 📚 Technical Documentation & Architecture Guides
+
+Detailed deep-dive documentation files are located in the **[`docs/`](./docs)** folder:
+
+| Guide Name | Description | Link |
+| :--- | :--- | :--- |
+| 🔬 **Codebase Deep Dive** | Deep class-by-class & method-by-method technical code breakdown | [`docs/CODEBASE_DEEP_DIVE.md`](./docs/CODEBASE_DEEP_DIVE.md) |
+| 🎓 **System Architecture & Learning** | High-level system design, 5 core pillars, & mathematical RRF formulas | [`docs/SYSTEM_ARCHITECTURE_LEARNING.md`](./docs/SYSTEM_ARCHITECTURE_LEARNING.md) |
+| 🚀 **Deployment Guide** | Step-by-step GitHub push, Docker, Railway & Render deployment | [`docs/DEPLOYMENT_GUIDE.md`](./docs/DEPLOYMENT_GUIDE.md) |
+| 🏛️ **System Design Blueprint** | Component flow diagram, RAG pipeline, & vector store specifications | [`docs/SYSTEM_DESIGN_ARCHITECTURE.md`](./docs/SYSTEM_DESIGN_ARCHITECTURE.md) |
+
+---
+
 ## 🌟 Key Architectural Features & Pillars
 
 ```text
