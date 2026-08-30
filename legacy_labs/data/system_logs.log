@@ -1,0 +1,25 @@
+2026-08-29T10:15:02Z INFO systemd: Started System Logging Service.
+2026-08-29T10:20:11Z INFO sshd[841]: Server listening on 0.0.0.0 port 22.
+2026-08-29T10:20:11Z INFO sshd[841]: Server listening on :: port 22.
+2026-08-29T11:45:01Z ERROR sshd[1043]: Connection reset by authenticating user admin 192.168.1.50 port 54823 [preauth]
+2026-08-29T11:46:12Z WARNING sshd[1050]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.50 user=admin
+2026-08-29T12:00:00Z INFO cron[412]: (root) CMD (test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.daily; })
+2026-08-29T14:15:30Z INFO gateway-proxy: Route /api/v1/auth/login forwarded to auth-service-67fb
+2026-08-29T14:22:15Z ERROR gateway-proxy: SSL handshake failed, certificate expired (CN=api.internal.net)
+2026-08-29T14:22:16Z ERROR gateway-proxy: SSL handshake failed, certificate expired (CN=api.internal.net)
+2026-08-29T14:25:00Z WARNING gateway-proxy: Retrying connection to api.internal.net:443 after SSL failure
+2026-08-29T15:01:10Z INFO db-pool: Server connection pool initialized with 20 idle connections.
+2026-08-29T15:08:44Z WARNING db-pool: Active database connection count at 85% of capacity (85/100).
+2026-08-29T15:09:50Z WARNING db-pool: Active database connection count at 98% of capacity (98/100).
+2026-08-29T15:10:02Z CRITICAL db-pool: connection limit exceeded (100/100) for user 'app_user'
+2026-08-29T15:10:05Z CRITICAL db-pool: connection limit exceeded (100/100) for user 'app_user'
+2026-08-29T16:30:12Z INFO kubelet: Pulling image "redis:alpine"
+2026-08-29T16:30:15Z INFO kubelet: Successfully pulled image "redis:alpine" in 3.12s
+2026-08-29T16:30:16Z INFO kubelet: Created container redis
+2026-08-29T16:30:16Z INFO kubelet: Started container redis
+2026-08-29T16:45:30Z WARNING api-gateway: Upstream timeout after 5000ms for pod backend-service-7f89
+2026-08-29T17:05:10Z WARNING kernel: Process 2841 (node) has consumed 94% of available memory limits.
+2026-08-29T17:05:12Z CRITICAL kernel: Out of memory: Kill process 2841 (node) score 850 or sacrifice child
+2026-08-29T17:06:01Z ERROR k8s-kubelet: Pod backend-service-7f89 in namespace production terminated with exit code 137 (reason: OOMKilled)
+2026-08-29T17:06:10Z INFO k8s-kubelet: Restarting container backend-service in pod backend-service-7f89
+2026-08-29T17:06:15Z WARNING k8s-kubelet: Pod backend-service-7f89 is restarting too fast (CrashLoopBackOff).

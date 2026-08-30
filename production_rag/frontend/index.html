@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LogPilot AI - Autonomous System Observability & Incident Copilot</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Marked.js Markdown Renderer -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #030712;
+      color: #f3f4f6;
+    }
+    .font-outfit { font-family: 'Outfit', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+    /* Custom Glassmorphism UI */
+    .glass-panel {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    
+    .glass-header {
+      background: rgba(3, 7, 18, 0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Scrollbar Aesthetics */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030712;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #10b981;
+    }
+
+    /* Markdown Output Styles */
+    .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+      color: #34d399;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      margin-top: 0.8em;
+      margin-bottom: 0.4em;
+    }
+    .markdown-body h3 { font-size: 1.05rem; }
+    .markdown-body p { margin-bottom: 0.6em; line-height: 1.6; }
+    .markdown-body ul { list-style-type: disc; padding-left: 1.25rem; margin-bottom: 0.6em; }
+    .markdown-body code {
+      background: rgba(15, 23, 42, 0.9);
+      color: #6ee7b7;
+      padding: 0.15rem 0.4rem;
+      border-radius: 0.25rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85em;
+    }
+    .markdown-body pre {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
+      overflow-x: auto;
+      margin-bottom: 0.75rem;
+    }
+    .markdown-body pre code {
+      background: transparent;
+      padding: 0;
+      color: #e2e8f0;
+    }
+  </style>
+</head>
+<body class="h-screen flex flex-col overflow-hidden bg-slate-950 text-slate-100">
+
+  <!-- Header Bar -->
+  <header class="glass-header px-6 py-3.5 flex items-center justify-between z-20">
+    <div class="flex items-center space-x-3">
+      <div class="h-9 w-9 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center shadow-lg shadow-emerald-500/20">
+        <span class="text-slate-950 font-black text-lg">⚡</span>
+      </div>
+      <div>
+        <div class="flex items-center space-x-2.5">
+          <h1 class="font-outfit font-extrabold text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-emerald-400">
+            LogPilot AI
+          </h1>
+          <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-950 text-emerald-400 border border-emerald-800/80">
+            ENTERPRISE PROD
+          </span>
+          <button onclick="toggleModal(true)" class="px-3 py-1 rounded-xl text-xs font-mono font-bold bg-slate-900 hover:bg-emerald-950 text-emerald-400 hover:text-emerald-300 border border-emerald-500/40 transition shadow-sm flex items-center gap-1.5">
+            <span>📐</span> High-Level Architecture
+          </button>
+        </div>
+        <p class="text-xs text-slate-400 font-mono mt-0.5">
+          Autonomous System Observability • Hybrid Search (BM25 + FAISS) • GraphRAG • Semantic Cache
+        </p>
+      </div>
+    </div>
+
+    <!-- Educational Purpose Badge -->
+    <div class="hidden md:flex items-center space-x-2 bg-slate-900/80 border border-slate-800 px-3.5 py-1.5 rounded-xl">
+      <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="text-xs text-slate-300 font-mono">Build for Educational Purpose</span>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-1 flex overflow-hidden p-4 gap-4">
+
+    <!-- Left Pane: Microservices Live Log Inspector -->
+    <div class="w-5/12 glass-panel rounded-2xl flex flex-col overflow-hidden border border-slate-800/80 shadow-2xl">
+      <div class="px-4 py-3 border-b border-slate-800/80 bg-slate-950/60 flex items-center justify-between">
+        <span class="text-emerald-400 font-extrabold text-sm font-outfit tracking-wide flex items-center gap-1.5">
+          <span>📄</span> Live Log Inspector
+        </span>
+        
+        <!-- Log Controls -->
+        <div class="flex items-center space-x-2">
+          <input id="log-search-input" type="text" placeholder="🔍 Search User ID / Error..." 
+                 onkeyup="if(event.key==='Enter') fetchData()"
+                 class="bg-slate-900 text-slate-200 border border-slate-800 rounded-lg px-2.5 py-1 text-xs font-mono w-44 focus:outline-none focus:border-emerald-500 shadow-inner" />
+                 
+          <select id="service-select" onchange="fetchData()" class="bg-slate-900 text-emerald-400 border border-slate-800 rounded-lg px-2.5 py-1 text-xs font-mono focus:outline-none focus:border-emerald-500 shadow-inner">
+            <option value="all">🌐 All 14 Subfolders (18,000+ Lines)</option>
+            <option value="openssh">🔒 OpenSSH Auth (2,000 Lines)</option>
+            <option value="apache">🌐 Apache Web Server (2,000 Lines)</option>
+            <option value="hdfs">💾 Hadoop HDFS Cluster (2,000 Lines)</option>
+            <option value="bgl_supercomputer">💻 BGL Supercomputer (2,000 Lines)</option>
+            <option value="thunderbird">⚡ Thunderbird Supercomputer (2,000 Lines)</option>
+            <option value="spark_cluster">📊 Apache Spark Cluster (2,000 Lines)</option>
+            <option value="windows_events">🪟 Windows System Events (2,000 Lines)</option>
+            <option value="android_system">📱 Android System Log (2,000 Lines)</option>
+            <option value="auth_service">🛡️ Auth Microservice</option>
+            <option value="payment_gateway">💳 Payment Gateway</option>
+            <option value="database">🗄️ Postgres & Redis DB</option>
+            <option value="cloud_infra">☁️ Cloud Infra (AWS & Elasticsearch)</option>
+          </select>
+
+          <button onclick="fetchData()" class="p-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-emerald-400 transition border border-slate-800" title="Refresh Logs">
+            <span>🔄</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Terminal Log Display -->
+      <div id="log-terminal" class="flex-1 p-4 font-mono text-xs bg-[#03060d] overflow-y-auto leading-relaxed text-emerald-400/90 selection:bg-emerald-500 selection:text-slate-950">
+        <div class="flex items-center space-x-2 text-slate-400">
+          <span class="h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span>Connecting to microservices log streams...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Pane: RAG Chat Terminal -->
+    <div class="w-7/12 glass-panel rounded-2xl flex flex-col overflow-hidden border border-slate-800/80 shadow-2xl">
+      <div class="px-4 py-3 border-b border-slate-800/80 bg-slate-950/60 flex items-center justify-between">
+        <span class="text-emerald-400 font-extrabold text-sm font-outfit tracking-wide flex items-center gap-1.5">
+          <span>💬</span> Resolution Console
+        </span>
+        <div class="flex items-center space-x-2 text-xs text-slate-400 font-mono">
+          <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+          <span>Sub-10ms Cache Enabled</span>
+        </div>
+      </div>
+
+      <!-- Chat Message History -->
+      <div id="chat-history" class="flex-1 p-4 overflow-y-auto space-y-4">
+        <!-- Welcome Card -->
+        <div class="flex justify-start">
+          <div class="max-w-[92%] rounded-2xl p-5 bg-[#0b1220] text-slate-200 border-l-4 border-emerald-400 border-t border-r border-b border-slate-800/80 rounded-bl-none shadow-xl">
+            <div class="markdown-body text-sm">
+              <h3>🟢 LogPilot AI Ready</h3>
+              <p>Connected to <strong>18,000+ authentic production logs</strong> across 14 service subfolders.</p>
+              <ul>
+                <li><strong>Full Log Search</strong>: Use the search box above to find any User ID across 4,600+ lines!</li>
+                <li><strong>Pillar 1</strong>: Multi-tier Storage & Sub-10ms Semantic Cache</li>
+                <li><strong>Pillar 2</strong>: Two-Stage Hybrid Search (BM25 + FAISS via RRF) + Cross-Encoder Re-Ranking</li>
+                <li><strong>Pillar 3</strong>: Multi-Turn Query Contextualizer</li>
+                <li><strong>Pillar 4</strong>: Guardian Safety Protocol & Command Inspection</li>
+                <li><strong>Pillar 5</strong>: Exponential Backoff Resilience</li>
+                <li><strong>Pillar 6</strong>: OpenTelemetry Observability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Incident Buttons -->
+      <div class="px-4 py-2 bg-slate-950/80 border-t border-slate-800 flex items-center gap-2 overflow-x-auto text-xs">
+        <span class="text-slate-500 font-mono text-[11px] font-bold">Quick Scenarios:</span>
+        <button onclick="sendQuickQuery('Kafka consumer group order-processing-group is experiencing high consumer lag. How to fix?')" class="bg-slate-900/90 hover:bg-emerald-950/60 hover:border-emerald-500/50 text-emerald-400 border border-slate-800 rounded-xl px-3 py-1.5 transition font-mono text-[11px] whitespace-nowrap shadow-sm">
+          📊 Kafka Lag
+        </button>
+        <button onclick="sendQuickQuery('Redis cluster reports OOM command not allowed when used memory > maxmemory. What is the resolution?')" class="bg-slate-900/90 hover:bg-emerald-950/60 hover:border-emerald-500/50 text-emerald-400 border border-slate-800 rounded-xl px-3 py-1.5 transition font-mono text-[11px] whitespace-nowrap shadow-sm">
+          ⚡ Redis OOM
+        </button>
+        <button onclick="sendQuickQuery('Postgres logs show ERROR: deadlock detected. Process 18402 waits for ExclusiveLock. How to resolve?')" class="bg-slate-900/90 hover:bg-emerald-950/60 hover:border-emerald-500/50 text-emerald-400 border border-slate-800 rounded-xl px-3 py-1.5 transition font-mono text-[11px] whitespace-nowrap shadow-sm">
+          🐘 Postgres Deadlock
+        </button>
+        <button onclick="sendQuickQuery('OpenSSH logs show PAM 3 more authentication failures for user admin. How to respond?')" class="bg-slate-900/90 hover:bg-emerald-950/60 hover:border-emerald-500/50 text-emerald-400 border border-slate-800 rounded-xl px-3 py-1.5 transition font-mono text-[11px] whitespace-nowrap shadow-sm">
+          🔒 OpenSSH Break-in
+        </button>
+        <button onclick="sendQuickQuery('Apache gateway-proxy SSL handshake failed, certificate expired. How to fix?')" class="bg-slate-900/90 hover:bg-emerald-950/60 hover:border-emerald-500/50 text-emerald-400 border border-slate-800 rounded-xl px-3 py-1.5 transition font-mono text-[11px] whitespace-nowrap shadow-sm">
+          🌐 Apache SSL Error
+        </button>
+        <button onclick="sendQuickQuery('AWS S3 reports 403 Access Denied and 503 Slow Down on bucket production-data-bucket. What SOP to follow?')" class="bg-slate-900/90 hover:bg-emerald-950/60 hover:border-emerald-500/50 text-emerald-400 border border-slate-800 rounded-lg px-2.5 py-1 transition font-mono text-[11px] whitespace-nowrap shadow-sm">
+          ☁️ AWS S3 403 / 503
+        </button>
+      </div>
+
+      <!-- Input Form Bar -->
+      <div class="p-4 bg-slate-950 border-t border-slate-800/80">
+        <form onsubmit="event.preventDefault(); handleSend();" class="flex space-x-2">
+          <input type="text" id="query-input" placeholder="Paste error logs or ask troubleshooting questions..." class="flex-1 bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-emerald-500/70 focus:ring-1 focus:ring-emerald-500/40 transition font-mono">
+          <button type="submit" id="submit-btn" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition flex items-center space-x-2 font-mono text-sm shadow-lg shadow-emerald-500/20">
+            <span>DIAGNOSE</span>
+            <span>➔</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Telemetry Strip -->
+  <footer class="glass-header px-6 py-2 flex items-center justify-between text-xs font-mono text-slate-400 z-20">
+    <div class="flex items-center space-x-4">
+      <span>Total Queries: <strong id="total-queries-badge" class="text-emerald-400 font-bold">0</strong></span>
+      <span>Success Rate: <strong id="success-rate-badge" class="text-emerald-400 font-bold">100%</strong></span>
+      <span>Avg Latency: <strong id="avg-latency-badge" class="text-emerald-400 font-bold">0ms</strong></span>
+    </div>
+    <div>
+      <span>Architecture: <strong class="text-emerald-400">LogPilot AI Enterprise Architecture</strong></span>
+    </div>
+  </footer>
+
+  <!-- Interactive System Architecture Modal -->
+  <div id="arch-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-6 hidden">
+    <div class="glass-panel max-w-4xl w-full max-h-[90vh] rounded-3xl border border-slate-700/80 flex flex-col overflow-hidden shadow-2xl">
+      <div class="px-6 py-4 border-b border-slate-800 bg-slate-950 flex items-center justify-between">
+        <h2 class="font-outfit font-extrabold text-lg text-emerald-400 flex items-center gap-2">
+          <span>📐</span> LogPilot AI High-Level Architecture Blueprint
+        </h2>
+        <button onclick="toggleModal(false)" class="text-slate-400 hover:text-white text-xl font-bold">✕</button>
+      </div>
+      <div class="p-6 overflow-y-auto space-y-6 text-sm text-slate-300 font-mono">
+        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+          <h4 class="text-emerald-400 font-bold mb-2">1. End-to-End Incident Pipeline</h4>
+          <p class="text-xs leading-relaxed text-slate-400">User Query ➔ Agentic Intent Classification ➔ Multi-Turn Context Rewriter ➔ BM25 + FAISS Hybrid RRF Search ➔ Cross-Encoder Re-Ranking ➔ Live Realtime Log Tail Injection ➔ GraphRAG Dependency Injection ➔ LLM Grounded Synthesis ➔ Guardrail Scan ➔ Telemetry Log</p>
+        </div>
+        
+        <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
+          <h4 class="text-emerald-400 font-bold mb-2">2. Architecture Comparison: Google Cloud Reference vs. LogPilot AI</h4>
+          <div class="text-xs space-y-2 text-slate-300">
+            <p>• <strong>Vertex AI Search</strong> ➔ Hybrid BM25 + FAISS Reciprocal Rank Fusion (RRF)</p>
+            <p>• <strong>Stackdriver Live Log Streams</strong> ➔ Live Realtime Log Tail Injection from Disk</p>
+            <p>• <strong>Spanner GraphRAG</strong> ➔ Microservice Topological Graph Knowledge Base</p>
+            <p>• <strong>Model Armor Safety</strong> ➔ SafetyGuardian Prompt Injection Inspection</p>
+          </div>
+        </div>
+      </div>
+      <div class="px-6 py-3 border-t border-slate-800 bg-slate-950 flex justify-end">
+        <button onclick="toggleModal(false)" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-mono font-bold">
+          Close Blueprint
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let isFetching = false;
+    let messageHistory = [];
+
+    function toggleModal(show) {
+      document.getElementById("arch-modal").classList.toggle("hidden", !show);
+    }
+
+    async function fetchData() {
+      try {
+        const selectedService = document.getElementById("service-select")?.value || "all";
+        const searchVal = document.getElementById("log-search-input")?.value || "";
+        const logRes = await fetch(`/api/logs?service=${selectedService}&search=${encodeURIComponent(searchVal)}`);
+        const logData = await logRes.json();
+        
+        const terminalEl = document.getElementById("log-terminal");
+        if (logData.logs) {
+          const lines = logData.logs.split("\n");
+          let lineNum = 1;
+          terminalEl.innerHTML = lines.map(line => {
+            let color = "text-slate-300";
+            if (line.includes("CRITICAL")) color = "text-red-400 bg-red-950/50 font-bold px-1.5 py-0.5 rounded";
+            else if (line.includes("ERROR")) color = "text-rose-400 font-semibold";
+            else if (line.includes("WARNING")) color = "text-amber-400";
+            else if (line.includes("INFO")) color = "text-slate-400";
+            else if (line.startsWith("===") || line.startsWith("---")) color = "text-emerald-400 font-bold border-b border-slate-800 my-2 pt-2 text-xs";
+            
+            return `<div class="py-0.5 flex space-x-3"><span class="text-slate-600 select-none w-8 text-right font-mono text-[10px]">${lineNum++}</span><span class="${color}">${escapeHtml(line)}</span></div>`;
+          }).join("");
+        }
+
+        const telemRes = await fetch("/api/telemetry");
+        const telemData = await telemRes.json();
+        document.getElementById("total-queries-badge").innerText = telemData.total_queries || 0;
+        document.getElementById("success-rate-badge").innerText = (telemData.success_rate || 100) + "%";
+        document.getElementById("avg-latency-badge").innerText = (telemData.avg_latency_ms || 0) + "ms";
+      } catch (err) {
+        console.error("Fetch error:", err);
+      }
+    }
+
+    function escapeHtml(text) {
+      return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    function sendQuickQuery(text) {
+      document.getElementById("query-input").value = text;
+      handleSend();
+    }
+
+    async function handleSend() {
+      const inputEl = document.getElementById("query-input");
+      const query = inputEl.value.trim();
+      if (!query || isFetching) return;
+
+      const selectedService = document.getElementById("service-select")?.value;
+
+      isFetching = true;
+      document.getElementById("submit-btn").disabled = true;
+      inputEl.value = "";
+
+      const chatHistoryEl = document.getElementById("chat-history");
+      
+      // Append User Message
+      chatHistoryEl.insertAdjacentHTML("beforeend", `
+        <div class="flex justify-end">
+          <div class="max-w-[90%] rounded-2xl p-4 bg-slate-800 text-slate-100 border border-slate-700 rounded-br-none text-sm shadow-md">
+            ${escapeHtml(query)}
+          </div>
+        </div>
+      `);
+
+      // Append Loading Indicator
+      const loadingId = "loading-" + Date.now();
+      chatHistoryEl.insertAdjacentHTML("beforeend", `
+        <div id="${loadingId}" class="flex justify-start">
+          <div class="bg-slate-900 text-slate-300 border border-slate-800 rounded-2xl p-4 text-xs font-mono flex items-center space-x-3 shadow-lg">
+            <span class="h-2.5 w-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <span>Executing Hybrid RRF Search, Re-Ranking & Diagnosing...</span>
+          </div>
+        </div>
+      `);
+      chatHistoryEl.scrollTop = chatHistoryEl.scrollHeight;
+
+      try {
+        const res = await fetch("/api/query", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ 
+            query, 
+            chat_history: messageHistory,
+            service_filter: selectedService !== 'all' ? selectedService : null
+          })
+        });
+        const data = await res.json();
+        
+        document.getElementById(loadingId)?.remove();
+
+        let badgesHtml = "";
+        if (data.is_cache_hit) {
+          badgesHtml += `
+            <div class="mb-2 bg-emerald-950/90 text-emerald-300 border border-emerald-700/60 text-xs px-3 py-1 rounded-xl flex items-center space-x-1.5 font-mono shadow-sm">
+              <span>⚡</span><span>Sub-10ms Semantic Cache Hit</span>
+            </div>`;
+        }
+        if (data.guardrail_triggered) {
+          badgesHtml += `
+            <div class="mb-2 bg-amber-950/90 text-amber-300 border border-amber-700/60 text-xs px-3 py-1 rounded-xl flex items-center space-x-1.5 font-mono shadow-sm">
+              <span>🛡️</span><span>Safety Guardrail Triggered</span>
+            </div>`;
+        }
+
+        const parsedContent = typeof marked !== 'undefined' ? marked.parse(data.answer) : escapeHtml(data.answer);
+
+        chatHistoryEl.insertAdjacentHTML("beforeend", `
+          <div class="flex justify-start">
+            <div class="max-w-[90%] rounded-2xl p-5 bg-[#0b1220] text-slate-200 border-l-4 border-emerald-400 border-t border-r border-b border-slate-800/80 rounded-bl-none shadow-xl">
+              ${badgesHtml}
+              <div class="markdown-body text-sm">${parsedContent}</div>
+              ${data.latency_ms ? `<div class="mt-3 text-[10px] text-slate-500 font-mono text-right flex items-center justify-end space-x-1"><span>⚡ Execution Latency:</span><strong class="text-slate-400">${data.latency_ms.toFixed(0)}ms</strong></div>` : ""}
+            </div>
+          </div>
+        `);
+
+        messageHistory.push({ role: "user", content: query });
+        messageHistory.push({ role: "assistant", content: data.answer });
+        fetchData();
+      } catch (err) {
+        document.getElementById(loadingId)?.remove();
+        chatHistoryEl.insertAdjacentHTML("beforeend", `
+          <div class="flex justify-start">
+            <div class="bg-rose-950/90 text-rose-300 border border-rose-800 rounded-2xl p-4 text-xs font-mono shadow-lg">
+              ⚠️ <strong>API Connection Error</strong>: Could not reach backend server.
+            </div>
+          </div>
+        `);
+      } finally {
+        isFetching = false;
+        document.getElementById("submit-btn").disabled = false;
+        chatHistoryEl.scrollTop = chatHistoryEl.scrollHeight;
+      }
+    }
+
+    // Initialize on load
+    fetchData();
+  </script>
+</body>
+</html>

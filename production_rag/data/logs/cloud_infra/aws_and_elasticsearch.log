@@ -1,0 +1,150 @@
+2026-08-29T10:00:02.401Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: DC9)
+2026-08-29T10:00:24.267Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:00:50.477Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_1058.json'
+2026-08-29T10:01:07.248Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:01:25.282Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 1C51)
+2026-08-29T10:01:43.798Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:02:01.345Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:02:29.791Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:02:42.531Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:03:01.321Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_1571.json'
+2026-08-29T10:03:27.633Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:03:48.711Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:04:06.800Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:04:26.556Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:04:41.977Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:05:01.749Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:05:26.250Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:05:48.444Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_7358.json'
+2026-08-29T10:06:10.897Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:06:23.175Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:06:46.584Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:07:05.703Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:07:21.107Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_6297.json'
+2026-08-29T10:07:45.235Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:08:01.149Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:08:24.883Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:08:41.501Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:09:01.838Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:09:30.989Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:09:44.529Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 149A)
+2026-08-29T10:10:07.982Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:10:28.702Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_7190.json'
+2026-08-29T10:10:43.627Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:11:07.904Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:11:22.107Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:11:47.756Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:12:06.967Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:12:25.368Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:12:45.464Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 1B6B)
+2026-08-29T10:13:03.990Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:13:24.704Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:13:41.830Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:14:08.182Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:14:23.166Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:14:44.205Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:15:10.462Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:15:28.647Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:15:43.114Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:16:02.114Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_7489.json'
+2026-08-29T10:16:24.658Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:16:45.170Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:17:02.860Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:17:26.987Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:17:46.405Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:18:10.909Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:18:28.456Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:18:48.722Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:19:08.203Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:19:27.763Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:19:46.144Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:20:03.500Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:20:22.340Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:20:42.397Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:21:02.235Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_3380.json'
+2026-08-29T10:21:28.252Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:21:46.190Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 14FA)
+2026-08-29T10:22:05.280Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:22:22.356Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:22:42.543Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:23:07.220Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:23:24.656Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:23:49.528Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_2387.json'
+2026-08-29T10:24:10.304Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:24:30.701Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:24:41.358Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 176F)
+2026-08-29T10:25:01.285Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:25:27.601Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_1533.json'
+2026-08-29T10:25:45.634Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:26:05.141Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:26:24.586Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:26:49.504Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 1899)
+2026-08-29T10:27:02.622Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 13B5)
+2026-08-29T10:27:30.690Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 223D)
+2026-08-29T10:27:45.291Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:28:04.862Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:28:29.222Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 11BC)
+2026-08-29T10:28:42.138Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 1BDE)
+2026-08-29T10:29:06.733Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:29:26.488Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:29:43.908Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 853)
+2026-08-29T10:30:02.927Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:30:30.339Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 1140)
+2026-08-29T10:30:46.899Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:31:06.957Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 6E2)
+2026-08-29T10:31:30.977Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:31:42.667Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_5921.json'
+2026-08-29T10:32:04.456Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:32:27.916Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 781)
+2026-08-29T10:32:41.135Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:33:06.685Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:33:22.184Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:33:43.609Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:34:08.770Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_9051.json'
+2026-08-29T10:34:26.808Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:34:49.385Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:35:08.229Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:35:26.102Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:35:44.688Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:36:03.117Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:36:22.859Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:36:48.951Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:37:06.278Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:37:22.145Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 9F2)
+2026-08-29T10:37:49.848Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:38:01.596Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:38:21.466Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:38:46.118Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:39:02.167Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:39:22.431Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:39:46.438Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:40:04.437Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 12C9)
+2026-08-29T10:40:30.741Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:40:42.806Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 2017)
+2026-08-29T10:41:05.837Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_2589.json'
+2026-08-29T10:41:28.885Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:41:43.739Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:42:07.973Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free)
+2026-08-29T10:42:28.397Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:42:50.100Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:43:08.950Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:43:22.334Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:43:46.851Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:44:03.228Z INFO cloudwatch-agent[1102]: Metrics successfully flushed to AWS CloudWatch namespace 'Production/EC2'
+2026-08-29T10:44:28.865Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:44:46.351Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:45:05.286Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T10:45:24.718Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:45:48.506Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:46:02.793Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export_5161.json'
+2026-08-29T10:46:21.423Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:46:42.235Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:47:04.558Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T10:47:27.541Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:47:43.891Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:48:08.818Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: EB4)
+2026-08-29T10:48:21.713Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T10:48:46.138Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 18EC)
+2026-08-29T10:49:09.919Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 1A84)
+2026-08-29T10:49:30.938Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure
+2026-08-29T10:49:44.293Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure

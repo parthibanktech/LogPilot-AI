@@ -1,0 +1,40 @@
+2026-08-29T10:00:01.102Z INFO systemd[1]: Started Logging Daemon & System Monitor.
+2026-08-29T10:05:12.441Z INFO sshd[841]: Server listening on 0.0.0.0 port 22 (ECDSA).
+2026-08-29T10:10:00.000Z INFO cron[412]: (root) CMD (test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.daily; })
+2026-08-29T10:15:22.810Z INFO k8s-kubelet[1204]: Node node-01.internal health status: Healthy (CPU: 12%, Memory: 42%).
+2026-08-29T10:20:05.112Z INFO nginx-ingress[301]: Configuration reload successful. Worker processes spawned: 8.
+2026-08-29T11:01:14.991Z INFO kafka-broker-1[912]: [GroupCoordinator 1]: Registered new consumer group 'order-processing-group'.
+2026-08-29T11:45:01.320Z ERROR sshd[1043]: Connection reset by authenticating user admin 192.168.1.50 port 54823 [preauth]
+2026-08-29T11:46:12.841Z WARNING sshd[1050]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.50 user=admin
+2026-08-29T12:15:30.120Z INFO gateway-proxy[450]: Route /api/v1/auth/login forwarded to auth-service-67fb
+2026-08-29T12:22:15.651Z ERROR gateway-proxy[450]: SSL handshake failed, certificate expired (CN=api.internal.net)
+2026-08-29T12:22:16.890Z ERROR gateway-proxy[450]: SSL handshake failed, certificate expired (CN=api.internal.net)
+2026-08-29T12:25:00.104Z WARNING gateway-proxy[450]: Retrying connection to api.internal.net:443 after SSL failure
+2026-08-29T13:01:10.551Z INFO postgres-primary[1801]: database system is ready to accept connections (max_connections = 100).
+2026-08-29T13:08:44.221Z WARNING db-pool[1801]: Active database connection count at 85% of capacity (85/100).
+2026-08-29T13:09:50.990Z WARNING db-pool[1801]: Active database connection count at 98% of capacity (98/100).
+2026-08-29T13:10:02.124Z CRITICAL db-pool[1801]: connection limit exceeded (100/100) for user 'app_user'
+2026-08-29T13:10:05.672Z CRITICAL db-pool[1801]: connection limit exceeded (100/100) for user 'app_user'
+2026-08-29T13:45:12.801Z ERROR postgres-primary[18402]: ERROR: deadlock detected. Process 18402 waits for ExclusiveLock on relation orders; blocked by process 18410.
+2026-08-29T13:45:13.110Z ERROR postgres-primary[18410]: Process 18410 waits for ShareLock on transaction 98401; blocked by process 18402.
+2026-08-29T14:10:22.341Z INFO kafka-broker-1[912]: [ConsumerGroup order-processing-group]: Consumer id order-processor-7f89 timed out after 300000ms.
+2026-08-29T14:10:23.001Z WARNING kafka-broker-1[912]: CommitFailedException: Offset commit failed with CommitFailedException due to rebalance in progress.
+2026-08-29T14:10:25.890Z CRITICAL kafka-broker-1[912]: Consumer lag exceeds threshold: group 'order-processing-group' topic 'payment-events' total lag = 64200 messages.
+2026-08-29T14:40:12.501Z INFO redis-cluster[6379]: Server initialized, maxmemory set to 2048MB.
+2026-08-29T14:48:30.120Z WARNING redis-cluster[6379]: Memory usage at 92% (1884MB/2048MB). Eviction policy: noeviction.
+2026-08-29T14:50:01.889Z CRITICAL redis-cluster[6379]: RedisException: OOM command not allowed when used memory > 'maxmemory' (used memory: 2048MB).
+2026-08-29T14:50:04.102Z CRITICAL redis-cluster[6379]: RedisException: OOM command not allowed when used memory > 'maxmemory' (used memory: 2048MB).
+2026-08-29T15:15:20.901Z ERROR nginx-ingress[301]: 502 Bad Gateway: connect() failed (111: Connection refused) while connecting to upstream 'http://10.244.2.45:8080/payment/charge'
+2026-08-29T15:15:22.441Z ERROR nginx-ingress[301]: 502 Bad Gateway: no live upstreams while connecting to upstream 'payment-gateway-service'
+2026-08-29T15:30:10.120Z ERROR aws-s3-adapter[4012]: com.amazonaws.services.s3.model.AmazonS3Exception: Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 9F8A1B2C)
+2026-08-29T15:30:12.891Z WARNING aws-s3-adapter[4012]: Retrying S3 upload for bucket 'production-data-bucket' key 'logs/2026-08-29/export.json'
+2026-08-29T15:31:00.340Z ERROR aws-s3-adapter[4012]: 503 Slow Down: Please reduce your request rate to S3 bucket 'production-data-bucket' (prefix: logs/)
+2026-08-29T16:05:10.100Z WARNING kernel[0]: Process 2841 (node) has consumed 94% of available memory limits.
+2026-08-29T16:05:12.551Z CRITICAL kernel[0]: Out of memory: Kill process 2841 (node) score 850 or sacrifice child.
+2026-08-29T16:06:01.990Z ERROR k8s-kubelet[1204]: Pod backend-service-7f89 in namespace production terminated with exit code 137 (reason: OOMKilled)
+2026-08-29T16:06:10.120Z INFO k8s-kubelet[1204]: Restarting container backend-service in pod backend-service-7f89
+2026-08-29T16:06:15.441Z WARNING k8s-kubelet[1204]: Pod backend-service-7f89 is restarting too fast (CrashLoopBackOff).
+2026-08-29T16:40:11.890Z CRITICAL elasticsearch[9200]: ClusterHealthException: Cluster status is RED. 4 primary shards unassigned due to node failure.
+2026-08-29T16:40:15.102Z ERROR elasticsearch[9200]: ElasticsearchException: CircuitBreakingException [parent] Data too large, data for [<http_request>] would be [1048576000/1gb], which is larger than the limit of [1020054732/972.8mb]
+2026-08-29T17:00:01.000Z ERROR logrotate[2210]: IOError: [Errno 28] No space left on device: '/var/log/syslog.1'
+2026-08-29T17:00:05.331Z CRITICAL systemd[1]: File system root partition /dev/sda1 reached 100% disk usage capacity (0 bytes free).
