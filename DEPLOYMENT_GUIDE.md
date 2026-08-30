@@ -1,18 +1,15 @@
 # 🚀 LogPilot AI: GitHub & Cloud Deployment Guide
 
-Follow this quick step-by-step guide to create your GitHub repository, push your code, and deploy **LogPilot AI** to the cloud (Render, Railway, or Docker).
+Follow this quick step-by-step guide to push your code to GitHub and deploy **LogPilot AI** to the cloud (Render, Railway, or Docker).
 
 ---
 
-## 📌 Recommended GitHub Repository Details
+## 📌 GitHub Repository Details
 
-When creating your new repository on GitHub:
-
-- **Repository Name**: `LogPilot-AI` (or `logpilot-ai-copilot`)
+- **Repository Name**: `LogPilot-AI`
+- **GitHub URL**: `https://github.com/parthibanktech/LogPilot-AI.git`
 - **Short Description**:
   > `Autonomous SRE & System Observability Copilot powered by Hybrid RRF Search (BM25 + FAISS), Real-time Log Tail Injection, GraphRAG & Sub-10ms Semantic Cache.`
-- **Visibility**: Public (or Private)
-- **Topics / Tags**: `sre`, `rag`, `faiss`, `fastapi`, `observability`, `llm`, `ai-agent`, `system-reliability`, `devops`
 
 ---
 
@@ -21,20 +18,9 @@ When creating your new repository on GitHub:
 Open your terminal in the project directory (`d:\AI_AGENT_HACKTHON\5.0\Rag`) and run:
 
 ```bash
-# Initialize git repository (if not already initialized)
-git init
-
-# Add all project files
+# Add files and commit
 git add .
-
-# Commit changes
-git commit -m "feat: initial release of LogPilot AI Enterprise SRE Copilot (v5.3)"
-
-# Rename branch to main
-git branch -M main
-
-# Link to your new GitHub repository URL
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/LogPilot-AI.git
+git commit -m "feat: initial release of LogPilot AI SRE Copilot (v5.3)"
 
 # Push code to GitHub
 git push -u origin main
@@ -44,54 +30,53 @@ git push -u origin main
 
 ## ☁️ Step 2: Cloud Deployment Options
 
-### Option A: Render (1-Click Blueprint - Recommended)
+### Option A: Railway 1-Click Deployment (Fastest)
 
-1. Log into [Render.com](https://render.com).
-2. Click **New +** ➔ **Blueprint**.
-3. Select your `LogPilot-AI` GitHub repository.
-4. Render will automatically detect `render.yaml` and set up the Web Service.
-5. In Environment Variables, enter your key:
-   - `OPENAI_API_KEY`: `your-openai-api-key-here`
-6. Click **Apply**. Your app will build and deploy live!
+1. Log into [Railway.app](https://railway.app).
+2. Click **New Project** ➔ **Deploy from GitHub repo**.
+3. Select **`parthibanktech/LogPilot-AI`**.
+4. Click **Variables** and add:
+   - `OPENAI_API_KEY`: `your_openai_api_key_here`
+5. Railway will automatically build the `Dockerfile` and publish your live domain URL!
 
 ---
 
-### Option B: Docker Container Deployment (`docker-compose`)
+### Option B: Render Cloud Blueprint (`render.yaml`)
 
-For local Docker testing or VPS deployment (AWS EC2, DigitalOcean, Hetzner):
+1. Log into [Render.com](https://render.com).
+2. Click **New +** ➔ **Blueprint**.
+3. Connect **`parthibanktech/LogPilot-AI`**.
+4. Set `OPENAI_API_KEY` in environment variables and click **Apply**!
+
+---
+
+### Option C: Local / VPS Docker Compose Deployment
 
 ```bash
 # Set your API Key
 export OPENAI_API_KEY="your-api-key-here"
 
-# Build and start container in detached mode
+# Build and start container stack
 docker-compose up --build -d
 ```
 
-Verify deployment:
+Verify container status:
 ```bash
-curl http://localhost:8000/api/health
+docker ps
 ```
-
----
-
-### Option C: Railway 1-Click Deployment
-
-1. Log into [Railway.app](https://railway.app).
-2. Click **New Project** ➔ **Deploy from GitHub repo**.
-3. Select `LogPilot-AI`.
-4. Add environment variable `OPENAI_API_KEY`.
-5. Railway will automatically build the `Dockerfile` and expose your public domain URL!
 
 ---
 
 ## 🧪 Step 3: Run Verification Suite
 
-To verify that your deployment is 100% healthy:
-
+### A. Verify Inside Running Docker Container
 ```bash
-python verify_full_application.py
-python test_live_http_api.py
+# Execute the full 5-pillar verification suite inside the Docker container
+docker exec -it logpilot_ai_container python tests/verify_full_application.py
 ```
 
-All 5 verification tests will execute and confirm 100% pass rates!
+### B. Verify Live HTTP Endpoint (Local Docker or Railway Cloud URL)
+```bash
+# Run HTTP REST API endpoint tests against running server
+python tests/test_live_http_api.py
+```
