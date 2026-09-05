@@ -1,5 +1,8 @@
 # ⚡ LogPilot AI: Autonomous SRE & System Observability Copilot
 
+> 👨‍💻 **Author / Developer**: [Parthiban](https://github.com/parthibanktech)  
+> 🎓 **Purpose**: Built as an **Educational & Hackathon RAG Learning Project** for System Observability & AI Reliability Engineering.
+
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
 [![FAISS Vector DB](https://img.shields.io/badge/FAISS-VectorDB-0052CC?style=for-the-badge)](https://faiss.ai)
